@@ -1,0 +1,27 @@
+
+// main-header
+.main-header {
+  background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// navigation
+.title-bar,
+.top-bar,
+.top-bar ul {
+  background: transparent;
+}
+
+.hero {
+  padding: $padding * 54 0 $padding * 84;
+  @media only screen and (min-width: 40em) {
+    padding: $padding * 72 0 $padding * 108;
+  }
+}
+
+// Work 
+.work {
+  
+}

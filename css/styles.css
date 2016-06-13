@@ -1,0 +1,61 @@
+/* White */
+/* Black */
+.main-header {
+  background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.title-bar,
+.top-bar,
+.top-bar ul {
+  background: transparent; }
+
+.hero {
+  padding: 108px 0 168px; }
+  @media only screen and (min-width: 40em) {
+    .hero {
+      padding: 144px 0 216px; } }
+
+body {
+  font-family: "Yantramanav"; }
+
+li {
+  list-style: none; }
+
+.main-header h1,
+.main-header a {
+  font-family: "Yantramanav"; }
+.main-header h1 {
+  font-size: 3.375em; }
+  @media only screen and (min-width: 40em) {
+    .main-header h1 {
+      font-size: 5.063em; } }
+.main-header li > a {
+  font-size: 0.85em;
+  padding: .75em; }
+
+h2,
+h3 {
+  font-family: "Yantramanav"; }
+
+h2 {
+  font-size: 2.25em; }
+  @media only screen and (min-width: 40em) {
+    h2 {
+      font-size: 3.375em; } }
+
+h3 {
+  font-size: 1em;
+  font-weight: 400; }
+
+.white, .main-header h1,
+.main-header a {
+  color: #fff; }
+
+.text-uppercase, .main-header h1,
+.main-header a, h2,
+h3, button[type=submit] {
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=styles.css.map */

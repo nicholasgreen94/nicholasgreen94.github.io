@@ -1,0 +1,45 @@
+
+body {
+  font-family: $primary-font;
+}
+
+li {
+  list-style: none;
+}
+
+.main-header {
+  h1, 
+  a {
+    @extend .white;
+    @extend .text-uppercase;
+    font-family: $primary-font;
+  }
+  h1 {
+    font-size: $secondary-heading;
+    @media only screen and (min-width: 40em) {
+      font-size: $primary-heading;
+    }
+  }
+  li > a {
+    font-size: $small-font-size;
+    padding: .75em;
+  }
+}
+
+h2,
+h3 {
+  @extend .text-uppercase;
+  font-family: $primary-font;
+}
+
+h2 {
+  font-size: $third-heading;
+  @media only screen and (min-width: 40em) {
+    font-size: $secondary-heading;
+  }
+}
+
+h3 {
+  font-size: $base-font-size;
+  font-weight: 400;
+}
