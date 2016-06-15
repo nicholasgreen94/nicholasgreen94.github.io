@@ -40,7 +40,8 @@
 }
 
 .work-header,
-.about-header {
+.about-header,
+.contact-header {
   padding: $padding * 24 0 $padding * 48;
 }
 
@@ -75,5 +76,17 @@
   @extend .background-default;
   a:hover {
     color: $blue;
+  }
+}
+
+form {
+  [type="text"], 
+  [type="email"] {
+    height: 1.875em;
+    margin-bottom: $margin * 4;
+    padding: 0 .5rem;
+  }
+  textarea {
+    height: 5.25rem;
   }
 }
