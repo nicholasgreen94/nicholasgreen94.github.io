@@ -3,6 +3,9 @@ body {
   color: $black;
   font-family: $primary-font;
 }
+p {
+  line-height: 1.8;
+}
 
 li {
   list-style: none;
@@ -45,17 +48,83 @@ h2 {
 h3 {
   font-size: $fourth-heading;
   font-weight: 700;
-  text-align: left;
+  padding-top: $padding * 12;
   @media only screen and (min-width: 40em) {
     font-size: $third-heading;
+    padding-top: $padding * 18;
     text-align: center;
   }
 }
 
-.about-list {
-  ul {
-    li {
-      font-size: $base-font-size;
+.work-header,
+.about-header,
+.contact-header {
+  span {
+    font-size: $base-font-size;
+    @media only screen and (min-width: 64em) {
+      font-size: $fourth-heading;
     }
   }
 }
+
+.about {
+  p {
+    &:last-of-type {
+      margin-bottom: $margin * 6;
+    }
+  }
+  ul {
+    margin-left: 0;
+    @media only screen and (min-width: 40em) {
+      margin-left: 1.25rem;
+    }
+    li {
+      display: inline;
+      font-size: $base-font-size;
+      font-weight: 500;
+      @media only screen and (min-width: 64em) {
+        font-size: $fourth-heading;
+      }
+    }
+  }
+}
+
+a[href*="http://"] {
+  color: $blue;
+  font-weight: 700;
+  &:hover {
+    color: $gold;
+  }
+}
+
+// Social Media Icons
+.social-media {
+  a {
+    color: $gold;
+    font-size: $fourth-heading;
+    margin: 0 $margin * 4;
+  }
+}
+
+// Social media hovers 
+.fa-twitter {
+  &:hover {
+    color: $twitter;
+  }
+}
+.fa-instagram {
+  &:hover {
+    color: $instagram;
+  }
+}
+.fa-github {
+  &:hover {
+    color: $github;
+  }
+}
+.fa-medium {
+  &:hover {
+    color: $medium;
+  }
+}
+

@@ -1,5 +1,6 @@
 /* White */
 /* Black */
+/* Social Media colors */
 .main-header {
   background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d");
   background-position: 50% 50%;
@@ -31,7 +32,8 @@
     padding: 5px 10px; }
 
 .work-header,
-.about-header {
+.about-header,
+.contact-header {
   padding: 48px 0 96px; }
 
 .web a,
@@ -59,9 +61,20 @@
   .photography a:hover {
     color: rgba(23, 128, 186, 0.75); }
 
+form [type="text"],
+form [type="email"] {
+  height: 1.875em;
+  margin-bottom: 8px;
+  padding: 0 .5rem; }
+form textarea {
+  height: 5.25rem; }
+
 body {
   color: #615656;
   font-family: "Yantramanav"; }
+
+p {
+  line-height: 1.8; }
 
 li {
   list-style: none; }
@@ -93,14 +106,65 @@ h2 {
 h3 {
   font-size: 1.5em;
   font-weight: 700;
-  text-align: left; }
+  padding-top: 24px; }
   @media only screen and (min-width: 40em) {
     h3 {
       font-size: 2.25em;
+      padding-top: 36px;
       text-align: center; } }
 
-.about-list ul li {
+.work-header span,
+.about-header span,
+.contact-header span {
   font-size: 1em; }
+  @media only screen and (min-width: 64em) {
+    .work-header span,
+    .about-header span,
+    .contact-header span {
+      font-size: 1.5em; } }
+
+.about p:last-of-type {
+  margin-bottom: 12px; }
+.about ul {
+  margin-left: 0; }
+  @media only screen and (min-width: 40em) {
+    .about ul {
+      margin-left: 1.25rem; } }
+  .about ul li {
+    display: inline;
+    font-size: 1em;
+    font-weight: 500; }
+    @media only screen and (min-width: 64em) {
+      .about ul li {
+        font-size: 1.5em; } }
+
+a[href*="http://"] {
+  color: rgba(23, 128, 186, 0.75);
+  font-weight: 700; }
+  a[href*="http://"]:hover {
+    color: #C29B71; }
+
+.social-media a {
+  color: #C29B71;
+  font-size: 1.5em;
+  margin: 0 8px; }
+
+.fa-twitter:hover {
+  color: #00aced; }
+
+.fa-instagram:hover {
+  color: #833ab4; }
+
+.fa-github:hover {
+  color: #4183c4; }
+
+.fa-medium:hover {
+  color: #00ab6b; }
+
+button[type=submit] {
+  background: rgba(23, 128, 186, 0.75); }
+  button[type=submit]:hover {
+    background: #615656; }
 
 .white, .main-header h1,
 .main-header a {
