@@ -1,5 +1,6 @@
 
 body {
+  color: $black;
   font-family: $primary-font;
 }
 
@@ -34,12 +35,27 @@ h3 {
 
 h2 {
   font-size: $third-heading;
+  font-weight: 700;
+  margin: 0;
   @media only screen and (min-width: 40em) {
     font-size: $secondary-heading;
   }
 }
 
 h3 {
-  font-size: $base-font-size;
-  font-weight: 400;
+  font-size: $fourth-heading;
+  font-weight: 700;
+  text-align: left;
+  @media only screen and (min-width: 40em) {
+    font-size: $third-heading;
+    text-align: center;
+  }
+}
+
+.about-list {
+  ul {
+    li {
+      font-size: $base-font-size;
+    }
+  }
 }

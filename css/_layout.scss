@@ -23,5 +23,57 @@
 
 // Work 
 .work {
-  
+  .work-section {
+    border-bottom: 2px solid $white;
+    font-weight: 700;
+    padding: $padding * 56 0;
+    @media only screen and (min-width: 40em) {
+      padding: $padding * 84 0;
+    }
+    @media only screen and (min-width: 64em) {
+      padding: $padding * 108 0; 
+    }
+    a {
+      padding: $padding * 2.5 $padding *5;
+    }
+  }
+}
+
+.work-header,
+.about-header {
+  padding: $padding * 24 0 $padding * 48;
+}
+
+.web,
+.design,
+.photography {
+  a {
+    border: 2px solid $white;
+    color: $white;
+    &:hover {
+      background: $white;
+    }
+  }
+}
+
+.web {
+  background: $black-overlay, url("../images/macbook.jpg");
+  @extend .background-default;
+  a:hover {
+    color: $black;
+  }
+}
+.design {
+  background: $gold-overlay, url("../images/notebook.jpg");
+  @extend .background-default;
+  a:hover {
+    color: $gold;
+  }
+}
+.photography {
+  background: $blue-overlay, url("../images/camera.jpg");
+  @extend .background-default;
+  a:hover {
+    color: $blue;
+  }
 }

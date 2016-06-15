@@ -17,7 +17,50 @@
     .hero {
       padding: 144px 0 216px; } }
 
+.work .work-section {
+  border-bottom: 2px solid #fff;
+  font-weight: 700;
+  padding: 112px 0; }
+  @media only screen and (min-width: 40em) {
+    .work .work-section {
+      padding: 168px 0; } }
+  @media only screen and (min-width: 64em) {
+    .work .work-section {
+      padding: 216px 0; } }
+  .work .work-section a {
+    padding: 5px 10px; }
+
+.work-header,
+.about-header {
+  padding: 48px 0 96px; }
+
+.web a,
+.design a,
+.photography a {
+  border: 2px solid #fff;
+  color: #fff; }
+  .web a:hover,
+  .design a:hover,
+  .photography a:hover {
+    background: #fff; }
+
+.web {
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/macbook.jpg"); }
+  .web a:hover {
+    color: #615656; }
+
+.design {
+  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/notebook.jpg"); }
+  .design a:hover {
+    color: #C29B71; }
+
+.photography {
+  background: linear-gradient(rgba(23, 128, 186, 0.75), rgba(23, 128, 186, 0.75)), url("../images/camera.jpg"); }
+  .photography a:hover {
+    color: rgba(23, 128, 186, 0.75); }
+
 body {
+  color: #615656;
   font-family: "Yantramanav"; }
 
 li {
@@ -27,7 +70,7 @@ li {
 .main-header a {
   font-family: "Yantramanav"; }
 .main-header h1 {
-  font-size: 3.375em; }
+  font-size: 4.275em; }
   @media only screen and (min-width: 40em) {
     .main-header h1 {
       font-size: 5.063em; } }
@@ -40,14 +83,24 @@ h3 {
   font-family: "Yantramanav"; }
 
 h2 {
-  font-size: 2.25em; }
+  font-size: 2.25em;
+  font-weight: 700;
+  margin: 0; }
   @media only screen and (min-width: 40em) {
     h2 {
-      font-size: 3.375em; } }
+      font-size: 4.275em; } }
 
 h3 {
-  font-size: 1em;
-  font-weight: 400; }
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: left; }
+  @media only screen and (min-width: 40em) {
+    h3 {
+      font-size: 2.25em;
+      text-align: center; } }
+
+.about-list ul li {
+  font-size: 1em; }
 
 .white, .main-header h1,
 .main-header a {
@@ -57,5 +110,10 @@ h3 {
 .main-header a, h2,
 h3, button[type=submit] {
   text-transform: uppercase; }
+
+.background-default, .web, .design, .photography {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=styles.css.map */

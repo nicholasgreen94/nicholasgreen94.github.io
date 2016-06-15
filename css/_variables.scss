@@ -2,13 +2,20 @@
 // Colors 
 $white: #fff; /* White */
 $black: lighten(#2b2626, 20%); /* Black */
+$gold: #C29B71;
+$blue: rgba(23, 128, 186, 0.75);
+
+// Overlays
+$black-overlay: linear-gradient(rgba(43,38,38,.75), rgba(43,38,38,.75));
+$gold-overlay: linear-gradient(rgba(194,155,112,.75),rgba(194,155,112,.75));
+$blue-overlay: linear-gradient($blue, $blue);
 
 // Font Families 
 $primary-font: "Yantramanav"; 
 
 // Font Sizes
 $primary-heading: 5.063em;
-$secondary-heading: 3.375em;
+$secondary-heading: 4.275em;
 $third-heading: 2.25em;
 $fourth-heading: 1.5em;
 $base-font-size: 1em;
