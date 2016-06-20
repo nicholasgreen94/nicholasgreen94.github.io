@@ -2,10 +2,7 @@
 /* Black */
 /* Social Media colors */
 .main-header {
-  background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"); }
 
 .title-bar,
 .top-bar,
@@ -59,41 +56,57 @@
 .photography {
   background: linear-gradient(rgba(23, 128, 186, 0.75), rgba(23, 128, 186, 0.75)), url("../images/camera.jpg"); }
   .photography a:hover {
-    color: rgba(23, 128, 186, 0.75); }
+    color: #1780ba; }
 
-form [type="text"],
-form [type="email"] {
-  height: 1.875em;
-  margin-bottom: 8px;
-  padding: 0 .5rem; }
-form textarea {
-  height: 5.25rem; }
+.contact {
+  margin-bottom: 36px; }
+  .contact form [type="text"],
+  .contact form [type="email"] {
+    height: 1.875em;
+    margin-bottom: 8px;
+    padding: 0 .5rem; }
+  .contact form textarea {
+    height: 5.25rem; }
+
+.main-footer {
+  background: url("https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=231736de0bc92d79a6ee049208b9c283");
+  padding-top: 16px; }
 
 body {
   color: #615656;
-  font-family: "Yantramanav"; }
+  font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif; }
 
 p {
-  line-height: 1.8; }
+  line-height: 1.8;
+  font-family: "Mate", serif;
+  font-size: 0.85em; }
+  @media only screen and (min-width: 40em) {
+    p {
+      font-size: 1em; } }
 
 li {
   list-style: none; }
 
 .main-header h1,
 .main-header a {
-  font-family: "Yantramanav"; }
+  font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif; }
 .main-header h1 {
   font-size: 4.275em; }
   @media only screen and (min-width: 40em) {
     .main-header h1 {
       font-size: 5.063em; } }
-.main-header li > a {
+
+.menu a:hover {
+  color: #1780ba; }
+
+.main-header li > a,
+.main-footer li > a {
   font-size: 0.85em;
   padding: .75em; }
 
 h2,
 h3 {
-  font-family: "Yantramanav"; }
+  font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif; }
 
 h2 {
   font-size: 2.25em;
@@ -139,15 +152,18 @@ h3 {
         font-size: 1.5em; } }
 
 a[href*="http://"] {
-  color: rgba(23, 128, 186, 0.75);
+  color: #1780ba;
+  font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif;
   font-weight: 700; }
   a[href*="http://"]:hover {
     color: #C29B71; }
 
-.social-media a {
-  color: #C29B71;
-  font-size: 1.5em;
-  margin: 0 8px; }
+.social-media {
+  margin-top: 24px; }
+  .social-media a {
+    color: #C29B71;
+    font-size: 1.5em;
+    margin: 0 8px; }
 
 .fa-twitter:hover {
   color: #00aced; }
@@ -162,20 +178,22 @@ a[href*="http://"] {
   color: #00ab6b; }
 
 button[type=submit] {
-  background: rgba(23, 128, 186, 0.75); }
+  background: #1780ba; }
   button[type=submit]:hover {
     background: #615656; }
 
 .white, .main-header h1,
-.main-header a {
+.main-header a, .main-header li > a,
+.main-footer li > a {
   color: #fff; }
 
 .text-uppercase, .main-header h1,
-.main-header a, h2,
+.main-header a, .main-header li > a,
+.main-footer li > a, h2,
 h3, button[type=submit] {
   text-transform: uppercase; }
 
-.background-default, .web, .design, .photography {
+.background-default, .main-header, .web, .design, .photography, .main-footer {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }

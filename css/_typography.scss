@@ -5,6 +5,11 @@ body {
 }
 p {
   line-height: 1.8;
+  font-family: $secondary-font;
+  font-size: $small-font-size;
+  @media only screen and (min-width: 40em) {
+    font-size: $base-font-size;
+  }
 }
 
 li {
@@ -24,7 +29,21 @@ li {
       font-size: $primary-heading;
     }
   }
+}
+
+.menu {
+  a {
+    &:hover {
+      color: $blue;
+    } 
+  }
+}
+
+.main-header,
+.main-footer {
   li > a {
+    @extend .white;
+    @extend .text-uppercase;
     font-size: $small-font-size;
     padding: .75em;
   }
@@ -91,6 +110,7 @@ h3 {
 
 a[href*="http://"] {
   color: $blue;
+  font-family: $primary-font;
   font-weight: 700;
   &:hover {
     color: $gold;
@@ -99,6 +119,7 @@ a[href*="http://"] {
 
 // Social Media Icons
 .social-media {
+  margin-top: $margin * 12;
   a {
     color: $gold;
     font-size: $fourth-heading;
