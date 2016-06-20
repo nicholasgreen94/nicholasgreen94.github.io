@@ -9,12 +9,12 @@
   <!-- CSS -->
   <script src="https://use.fontawesome.com/06eb608a6e.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Yantramanav:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Yantramanav:400,100,300,500,700|Mate' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
 </head>
   <body>
     <!-- .main-header -->
-    <header class="main-header">
+    <header class="main-header" id="top">
       <!-- repsonsive-navigation -->
       <div class="title-bar" data-responsive-toggle="navigation" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle></button>
@@ -22,12 +22,14 @@
       <!-- repsonsive-navigation -->
       <div class="top-bar" id="navigation">
         <div class="top-bar-right">
+          <div class="menu-centered">
             <ul class="menu horizontal">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="hero">
@@ -36,7 +38,7 @@
     </header>
     <!-- .main-header -->
     <!-- .work -->
-    <article class="work">
+    <article class="work" id="work">
       <div class="row expanded">
         <div class="work-header text-center">
           <h2>Work</h2>
@@ -61,7 +63,7 @@
     </article>
     <!-- .work -->
     <!-- .about -->
-    <article class="about">
+    <article class="about" id="about">
       <div class="row">
         <div class="about-header text-center">
           <h2>About</h2>
@@ -102,7 +104,7 @@
     </article>
     <!-- .about -->
     <!-- .contact -->
-    <article class="contact">
+    <article class="contact" id="contact">
       <div class="row">
       <form>
         <div class="contact-header text-center">
@@ -133,8 +135,19 @@
     </article>
     <!-- .contact -->
     <!-- .main-footer -->
-    <footer>
-      
+    <footer class="main-footer">
+      <div class="top-bar">
+        <div class="top-bar-right">
+          <div class="menu-centered">
+            <ul class="menu horizontal">
+              <li><a href="#top">Home</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- .main-footer -->
     <!-- javascript -->
