@@ -1,4 +1,9 @@
 
+button {
+  @extend .white;
+  @extend .text-uppercase;
+}
+
 button[type=submit] {
   @extend .text-uppercase;
   background: $blue;

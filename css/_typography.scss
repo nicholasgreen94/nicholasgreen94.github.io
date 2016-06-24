@@ -77,7 +77,8 @@ h3 {
 
 .work-header,
 .about-header,
-.contact-header {
+.contact-header,
+.web-header {
   span {
     font-size: $base-font-size;
     @media only screen and (min-width: 64em) {
@@ -149,3 +150,11 @@ a[href*="http://"] {
   }
 }
 
+.project-header {
+  margin-bottom: 0;
+}
+
+.project-p {
+  @extend .white;
+  padding: 0 $padding * 9;
+}

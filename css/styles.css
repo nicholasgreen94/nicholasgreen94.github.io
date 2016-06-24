@@ -30,7 +30,8 @@
 
 .work-header,
 .about-header,
-.contact-header {
+.contact-header,
+.web-header {
   padding: 48px 0 96px; }
 
 .web a,
@@ -71,6 +72,39 @@
 .main-footer {
   background: url("https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=231736de0bc92d79a6ee049208b9c283");
   padding-top: 16px; }
+
+.project {
+  margin-bottom: 24px;
+  padding: 96px 0; }
+  @media only screen and (min-width: 40em) {
+    .project {
+      padding: 112px 0; } }
+  @media only screen and (min-width: 64em) {
+    .project {
+      margin-bottom: 28px;
+      padding: 128px 0; } }
+
+.project-1 {
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/aerom.png"); }
+
+.project-2 {
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/digim.png"); }
+
+.project-3 {
+  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/ocean_blue.png"); }
+
+.project-4 {
+  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/movie_api.png"); }
+
+.project-5 {
+  background: linear-gradient(rgba(23, 128, 186, 0.75), rgba(23, 128, 186, 0.75)), url("../images/form.png"); }
+
+.project-6 {
+  background: linear-gradient(rgba(23, 128, 186, 0.75), rgba(23, 128, 186, 0.75)), url("../images/coffee_lab.png"); }
+
+.btn-wrap button,
+.btn-wrap a {
+  display: inline-block; }
 
 body {
   color: #615656;
@@ -128,12 +162,14 @@ h3 {
 
 .work-header span,
 .about-header span,
-.contact-header span {
+.contact-header span,
+.web-header span {
   font-size: 1em; }
   @media only screen and (min-width: 64em) {
     .work-header span,
     .about-header span,
-    .contact-header span {
+    .contact-header span,
+    .web-header span {
       font-size: 1.5em; } }
 
 .about p:last-of-type {
@@ -177,23 +213,29 @@ a[href*="http://"] {
 .fa-medium:hover {
   color: #00ab6b; }
 
+.project-header {
+  margin-bottom: 0; }
+
+.project-p {
+  padding: 0 18px; }
+
 button[type=submit] {
   background: #1780ba; }
   button[type=submit]:hover {
     background: #615656; }
 
-.white, .main-header h1,
+.white, .btn-wrap a, .main-header h1,
 .main-header a, .main-header li > a,
-.main-footer li > a {
+.main-footer li > a, .project-p, button {
   color: #fff; }
 
-.text-uppercase, .main-header h1,
+.text-uppercase, .btn-wrap, .main-header h1,
 .main-header a, .main-header li > a,
 .main-footer li > a, h2,
-h3, button[type=submit] {
+h3, button, button[type=submit] {
   text-transform: uppercase; }
 
-.background-default, .main-header, .web, .design, .photography, .main-footer {
+.background-default, .main-header, .web, .design, .photography, .main-footer, .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
