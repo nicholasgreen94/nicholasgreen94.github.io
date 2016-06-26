@@ -114,6 +114,18 @@ form {
   }
 }
 
+.project-initial {
+  margin-bottom: $margin * 12;
+  padding: $padding * 12 0;
+  @media only screen and (min-width: 40em) {
+    padding: $padding * 24 0;
+  }
+  @media only screen and (min-width: 64em) {
+    margin-bottom: $margin * 14;
+    padding: $padding * 36 0;
+  }
+}
+
 /////////////////////////////////////////////
 /// web design & development ///
 ////////////////////////////////////////////

@@ -84,6 +84,17 @@
       margin-bottom: 28px;
       padding: 128px 0; } }
 
+.project-initial {
+  margin-bottom: 24px;
+  padding: 24px 0; }
+  @media only screen and (min-width: 40em) {
+    .project-initial {
+      padding: 48px 0; } }
+  @media only screen and (min-width: 64em) {
+    .project-initial {
+      margin-bottom: 28px;
+      padding: 72px 0; } }
+
 .project-1 {
   background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/aerom.png"); }
 

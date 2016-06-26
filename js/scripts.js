@@ -14,7 +14,7 @@ $(function() {
     $(this).hide(); // hide button
     $(this).next()
               .show()
-              .addClass("large-offset-3 large-6"); // Show .project-p
+              .addClass("large-offset-2 large-8"); // Show .project-p
               
     $(this).next()
               .next()
@@ -23,13 +23,13 @@ $(function() {
     $(this).parent(".project")
               .parent("div")
               .removeClass("large-5 large-offset-1")
-              .addClass("large-12");
+              .addClass("large-offset-1 large-10");
               
     $(this).parent(".project")
               .parent("div")
               .next("div")
               .removeClass("large-5 large-offset-1 large-offset-0 end")
-              .addClass("large-12");
+              .addClass("large-offset-1 large-10 end");
   });
 
 });
