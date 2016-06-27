@@ -4,6 +4,12 @@ button {
   @extend .text-uppercase;
 }
 
+.btn-reveal {
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: $padding * 2;
+}
+
 button[type=submit] {
   @extend .text-uppercase;
   background: $blue;
@@ -11,3 +17,4 @@ button[type=submit] {
     background: $black;
   }
 }
+

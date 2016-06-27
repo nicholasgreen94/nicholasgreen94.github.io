@@ -23,11 +23,16 @@
       <div class="top-bar" id="navigation">
         <div class="top-bar-right">
           <div class="menu-centered">
-            <ul class="menu horizontal">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <ul class="menu horizontal dropdown menu" data-dropdown-menu>
+              <li><a href="index.html#top">Home</a></li>
+              <li class="work-link"><a href="index.html#work">Work</a>
+                <ul class="menu drop-menu">
+                  <li><a href="#">Web Design &amp; Development</a></li>
+                  <li><a href="design.html">Design</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -48,7 +53,7 @@
       <!-- .project-1 -->
       <div class="small-12 large-offset-1 large-5 columns">
         <h3 class="project-header text-center">Aerom</h3>
-        <section class="project-1 project project-click">
+        <section class="project-1 project project-initial">
           <button class="btn-reveal float-center">See Project</button>
           <p class="project-p">
             This is a website that I created for a small fictitious marketing company. I started creating the 
@@ -63,7 +68,7 @@
             I used Bootstrap 3 for a framework.
           </p>
           <div class="btn-wrap text-center">
-            <button class="float-center">Minimize</button>
+            <button class="btn-minimize float-center">Minimize</button>
             <a class="float-center" href="digim_marketing/index.html" target="_blank">Go To Site</a>
           </div>
         </section>
@@ -72,7 +77,7 @@
       <!-- .project-2 -->
       <div class="small-12 large-offset-0 large-5 columns end">
         <h3 class="project-header text-center">Digim Marketing</h3>
-        <section class="project-2 project">
+        <section class="project-2 project project-initial">
           <button class="btn-reveal float-center">See Project</button>
           <p class="project-p">
             This is a website that I created for a small fictitious marketing company. I started creating the 
@@ -87,7 +92,7 @@
             I used Bootstrap 3 for a framework.
           </p>
           <div class="btn-wrap text-center">
-            <button class="float-center">Minimize</button>
+            <button class="btn-minimize float-center">Minimize</button>
             <a class="float-center" href="digim_marketing/index.html" target="_blank">Go To Site</a>
           </div>
         </section>
@@ -98,22 +103,17 @@
       <!-- .project-3 -->
       <div class="small-12 large-offset-1 large-5 columns">
         <h3 class="project-header text-center">Ocean Blue</h3>
-        <section class="project-3 project">
+        <section class="project-3 project project-initial">
           <button class="btn-reveal float-center">See Project</button>
           <p class="project-p">
-            This is a website that I created for a small fictitious marketing company. I started creating the 
-            site when I was learning HTML &amp; CSS and was originally inspired Lorde’s Pure Heroine album cover. 
-            I used that as an inspiration but my inspiration had changed during the project and took a different 
-            change than what I had originally intended. I came back to the drawing board and sketched out a 
-            new design for the website. I wanted the site to have a minimalist feel with a good contrast between 
-            the type and background, why I chose the colors that are currently presented. The pictures are used 
-            to as an emphasis as to the work that the company does. While in the biography section since it is a 
-            smaller company that has four employees, I decided to create a place for them to each give a statement 
-            about who they are and what they do for the company. This site was built using HTML, SASS and jQuery.
-            I used Bootstrap 3 for a framework.
+            This website came from a challenge that I gave myself. It was to create a website 
+            and code it under one day. It's a very simple website, has basic sections, was a 
+            great experience to give me restraints and a timeline in a project. The color scheme is 
+            dark navy, coral, and white. Mixed with the Abel (sans serif) and Amiri(serif) fonts offered 
+            by Google. It was built using Bootstrap 4, which was my first time working with that framework.  
           </p>
           <div class="btn-wrap text-center">
-            <button class="float-center">Minimize</button>
+            <button class="btn-minimize float-center">Minimize</button>
             <a class="float-center" href="digim_marketing/index.html" target="_blank">Go To Site</a>
           </div>
         </section>
@@ -122,22 +122,17 @@
       <!-- .project-4 -->
       <div class="small-12 large-offset-0 large-5 columns end">
         <h3 class="project-header text-center">Movie API</h3>
-        <section class="project-4 project">
+        <section class="project-4 project project-initial">
           <button class="btn-reveal float-center">See Project</button>
           <p class="project-p">
-            This is a website that I created for a small fictitious marketing company. I started creating the 
-            site when I was learning HTML &amp; CSS and was originally inspired Lorde’s Pure Heroine album cover. 
-            I used that as an inspiration but my inspiration had changed during the project and took a different 
-            change than what I had originally intended. I came back to the drawing board and sketched out a 
-            new design for the website. I wanted the site to have a minimalist feel with a good contrast between 
-            the type and background, why I chose the colors that are currently presented. The pictures are used 
-            to as an emphasis as to the work that the company does. While in the biography section since it is a 
-            smaller company that has four employees, I decided to create a place for them to each give a statement 
-            about who they are and what they do for the company. This site was built using HTML, SASS and jQuery.
-            I used Bootstrap 3 for a framework.
+            The Movie API project is a website that I created where you can enter the name of a movie and it 
+            will get the movie information from the website <a class="project-a" href='http://www.omdbapi.com/'>OMDb API</a> 
+            and display information about the movie such as the year the movie was released, rating, runtime, 
+            actors, plot and more. It uses AJAX to access the site where all the information is stored to 
+            display the information.
           </p>
           <div class="btn-wrap text-center">
-            <button class="float-center">Minimize</button>
+            <button class="btn-minimize float-center">Minimize</button>
             <a class="float-center" href="digim_marketing/index.html" target="_blank">Go To Site</a>
           </div>
         </section>
@@ -148,22 +143,15 @@
     <div class="row expanded">
       <div class="small-12 large-offset-1 large-5 columns">
         <h3 class="project-header text-center">Summit Form</h3>
-        <section class="project-5 project">
+        <section class="project-5 project project-initial">
           <button class="btn-reveal float-center">See Project</button>
           <p class="project-p">
-            This is a website that I created for a small fictitious marketing company. I started creating the 
-            site when I was learning HTML &amp; CSS and was originally inspired Lorde’s Pure Heroine album cover. 
-            I used that as an inspiration but my inspiration had changed during the project and took a different 
-            change than what I had originally intended. I came back to the drawing board and sketched out a 
-            new design for the website. I wanted the site to have a minimalist feel with a good contrast between 
-            the type and background, why I chose the colors that are currently presented. The pictures are used 
-            to as an emphasis as to the work that the company does. While in the biography section since it is a 
-            smaller company that has four employees, I decided to create a place for them to each give a statement 
-            about who they are and what they do for the company. This site was built using HTML, SASS and jQuery.
-            I used Bootstrap 3 for a framework.
+            This form is a page that I created to practice working with AJAX. It has a success and fail function 
+            either of which will show an icon and a message depending on whether submitting the function 
+            worked. Currently, it works only for desktop browsers and is not mobile ready. 
           </p>
           <div class="btn-wrap text-center">
-            <button class="float-center">Minimize</button>
+            <button class="btn-minimize float-center">Minimize</button>
             <a class="float-center" href="digim_marketing/index.html" target="_blank">Go To Site</a>
           </div>
         </section>
@@ -172,22 +160,17 @@
     <!-- .project-6 -->
     <div class="small-12 large-offset-0 large-5 columns end">
       <h3 class="project-header text-center">Coffee Lab</h3>
-      <section class="project-6 project">
+      <section class="project-6 project project-initial">
         <button class="btn-reveal float-center">See Project</button>
         <p class="project-p">
-          This is a website that I created for a small fictitious marketing company. I started creating the 
-          site when I was learning HTML &amp; CSS and was originally inspired Lorde’s Pure Heroine album cover. 
-          I used that as an inspiration but my inspiration had changed during the project and took a different 
-          change than what I had originally intended. I came back to the drawing board and sketched out a 
-          new design for the website. I wanted the site to have a minimalist feel with a good contrast between 
-          the type and background, why I chose the colors that are currently presented. The pictures are used 
-          to as an emphasis as to the work that the company does. While in the biography section since it is a 
-          smaller company that has four employees, I decided to create a place for them to each give a statement 
-          about who they are and what they do for the company. This site was built using HTML, SASS and jQuery.
-          I used Bootstrap 3 for a framework.
+          This was the very first website that I created. I made it using HTML and CSS using the Bootstrap 3 front-end framework, 
+          then later after learning jQuery I added some functionality to the menu when it goes to mobile view. 
+          I created this site due to my love of coffee and was a great learning experience. I learned the basics of 
+          creating a website on my own without any assistance from online learning. It allowed me to get a step into the process 
+          of creating a website.
         </p>
         <div class="btn-wrap text-center">
-          <button class="float-center">Minimize</button>
+          <button class="btn-minimize float-center">Minimize</button>
           <a class="float-center" href="digim_marketing/index.html" target="_blank">Go To Site</a>
         </div>
       </section>
@@ -232,10 +215,11 @@
         <div class="top-bar-right">
           <div class="menu-centered">
             <ul class="menu horizontal">
-              <li><a href="#top">Home</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#top">Top</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
             </ul>
           </div>
         </div>

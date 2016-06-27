@@ -3,6 +3,7 @@
 .main-header {
   background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d");
   @extend .background-default;
+  @extend .background-attachment;
 }
 
 // navigation
@@ -10,6 +11,15 @@
 .top-bar,
 .top-bar ul {
   background: transparent;
+  .drop-menu {
+    background: $black;
+    border: none;
+    a {
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
 }
 
 .hero {
@@ -96,13 +106,14 @@ form {
 .main-footer {
   background: url("https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=231736de0bc92d79a6ee049208b9c283");
   @extend .background-default;
+  @extend .background-attachment;
   padding-top: $padding * 8;
 }
 
 ///////////////////////////
 /// project pages ///
 //////////////////////////
-.project {
+.project-initial {
   margin-bottom: $margin * 12;
   padding: $padding * 48 0;
   @media only screen and (min-width: 40em) {
@@ -114,15 +125,15 @@ form {
   }
 }
 
-.project-initial {
+.project-click {
   margin-bottom: $margin * 12;
-  padding: $padding * 12 0;
+  padding: $padding * 24 0;
   @media only screen and (min-width: 40em) {
     padding: $padding * 24 0;
   }
   @media only screen and (min-width: 64em) {
     margin-bottom: $margin * 14;
-    padding: $padding * 36 0;
+    padding: $padding * 30 0;
   }
 }
 
@@ -135,12 +146,12 @@ form {
 }
 
 .project-2 {
-  background: $black-overlay, url("../images/digim.png");
+  background: $gold-overlay, url("../images/digim.png");
   @extend .background-default;
 }
 
 .project-3 {
-  background: $gold-overlay, url("../images/ocean_blue.png");
+  background: $black-overlay, url("../images/ocean_blue.png");
   @extend .background-default;
 }
 
@@ -150,22 +161,11 @@ form {
 }
 
 .project-5 {
-  background: $blue-overlay, url("../images/form.png");
+  background: $black-overlay, url("../images/form.png");
   @extend .background-default;
 }
 
 .project-6 {
-  background: $blue-overlay, url("../images/coffee_lab.png");
+  background: $gold-overlay, url("../images/coffee_lab.png");
   @extend .background-default;
-}
-
-.btn-wrap {
-  @extend .text-uppercase;
-  button,
-  a {
-    display: inline-block;
-  }
-  a {
-    @extend .white;
-  }
 }
