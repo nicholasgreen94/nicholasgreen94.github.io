@@ -12,9 +12,9 @@ button {
 
 button[type=submit] {
   @extend .text-uppercase;
-  background: $blue;
+  background: $black;
   &:hover {
-    background: $black;
+    background: $gold;
   }
 }
 

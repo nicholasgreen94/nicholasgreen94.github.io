@@ -127,6 +127,12 @@ a[href*="http://"] {
     font-size: $fourth-heading;
     margin: 0 $margin * 4;
   }
+  i {
+    &:hover {
+      animation-name: social-hover;
+      animation-duration: .84s;
+    }
+  }
 }
 
 // Social media hovers 
