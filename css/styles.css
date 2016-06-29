@@ -64,11 +64,15 @@
   .design a:hover {
     color: #C29B71; }
 
+/*
 .photography {
-  background: linear-gradient(rgba(23, 128, 186, 0.75), rgba(23, 128, 186, 0.75)), url("../images/camera.jpg"); }
-  .photography a:hover {
-    color: #1780ba; }
-
+  background: $blue-overlay, url("../images/camera.jpg");
+  @extend .background-default;
+  a:hover {
+    color: $blue;
+  }
+}
+*/
 .contact {
   margin-bottom: 36px; }
   .contact form [type="text"],
@@ -109,31 +113,31 @@
   background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/aerom.png"); }
 
 .web-project-2 {
-  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/digim.png"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/digim.png"); }
 
 .web-project-3 {
   background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/ocean_blue.png"); }
 
 .web-project-4 {
-  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/movie_api.png"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/movie_api.png"); }
 
 .web-project-5 {
   background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/form.png"); }
 
 .web-project-6 {
-  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/coffee_lab.png"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/coffee_lab.png"); }
 
 .design-project-1 {
   background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/compass.jpg"); }
 
 .design-project-2 {
-  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/Aerom_Landing_Page.jpg"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/Aerom_Landing_Page.jpg"); }
 
 .design-project-3 {
   background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/evergreen_collective.jpg"); }
 
 .design-project-4 {
-  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/Lemon_Twist.jpg"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/Lemon_Twist.jpg"); }
 
 body {
   color: #615656;
@@ -285,7 +289,7 @@ button[type=submit] {
 h3, .btn-wrap, button, button[type=submit] {
   text-transform: uppercase; }
 
-.background-default, .main-header, .web, .design, .photography, .main-footer, .web-project-1, .web-project-2, .web-project-3, .web-project-4, .web-project-5, .web-project-6, .design-project-1, .design-project-2, .design-project-3, .design-project-4 {
+.background-default, .main-header, .web, .design, .main-footer, .web-project-1, .web-project-2, .web-project-3, .web-project-4, .web-project-5, .web-project-6, .design-project-1, .design-project-2, .design-project-3, .design-project-4 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }

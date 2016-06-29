@@ -10,6 +10,9 @@ var $btn_minimize = $(".btn-minimize");
 $project_p.hide();
 $btn_wrap.hide();
 
+// When user clicks on the reveal button, slide down the hidden p and .btn-wrap
+// remove class of .project-initial and add class of .project-click
+// remove current grid sizes for bigger grid sizes
 $btn_reveal.on("click", function() {
   $(this).hide(); // hide button
   $(this).next()
@@ -39,6 +42,9 @@ $btn_reveal.on("click", function() {
             .addClass("large-offset-1 large-10");
 });
   
+// When user clicks on the minimize button, slide up .project-p and .btn-wrap
+// add class of .project-initial and remove class of .project-click
+// fade in the reveal button
 $btn_minimize.on("click", function() {
   $(this).parent(".btn-wrap")
   .hide(); // hide .btn_wrap
