@@ -1,0 +1,112 @@
+@import url("fonts/Butler_Bold.otf");
+body {
+  font-family: "Fira Sans", Helvetica; }
+
+h1 {
+  font-family: Butler, Baskerville;
+  font-size: 3.375em;
+  padding-top: 64px;
+  margin-bottom: 0; }
+  @media only screen and (min-width: 40em) {
+    h1 {
+      font-size: 5.063em; } }
+
+span {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-top: -12px; }
+  @media only screen and (min-width: 40em) {
+    span {
+      margin-top: -24px; } }
+
+h2 {
+  font-family: Butler, Baskerville;
+  font-size: 1.5em; }
+  @media only screen and (min-width: 40em) {
+    h2 {
+      font-size: 2.25em; } }
+
+h3 {
+  font-family: "Fira Sans", Helvetica;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 48px 0 96px; }
+  @media only screen and (min-width: 40em) {
+    h3 {
+      font-size: 1.5em; } }
+
+figure figcaption {
+  font-family: "Fira Sans", Helvetica;
+  letter-spacing: 2px;
+  font-size: 0.85em;
+  padding: 10px 0; }
+
+.mission-statement h3 {
+  font-family: "Fira Sans", Helvetica;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 48px 0 12px; }
+  @media only screen and (min-width: 40em) {
+    .mission-statement h3 {
+      font-size: 1.5em; } }
+.mission-statement p {
+  font-size: .85em; }
+
+footer a {
+  font-family: Butler, Baskerville;
+  font-weight: 700; }
+
+body {
+  font-family: "Fira Sans", Helvetica;
+  max-width: 100%; }
+
+.main-header {
+  background: linear-gradient(rgba(100, 100, 100, 0.35), rgba(100, 100, 100, 0.35)), url("https://images.unsplash.com/photo-1441034281545-78296c3a6934?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a341e2a4a10656277b7535a63019dfc1");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.title-bar {
+  background: transparent; }
+
+#navigation {
+  background: transparent; }
+  #navigation ul {
+    background: transparent; }
+    #navigation ul li > a {
+      color: #fff; }
+
+.hero {
+  overflow: hidden;
+  border-bottom: 124px solid #fff;
+  border-left: 100vw solid transparent;
+  padding-top: 48px; }
+  @media only screen and (min-width: 40em) {
+    .hero {
+      border-bottom: 178px solid #fff;
+      padding-top: 128px; } }
+
+footer {
+  background: linear-gradient(rgba(100, 100, 100, 0.35), rgba(100, 100, 100, 0.35)), url("https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=260080a969c372cbc90f7e944d705830");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.footer-hero {
+  overflow: hidden;
+  border-top: 124px solid #fff;
+  border-left: 100vw solid transparent;
+  padding-bottom: 48px; }
+  @media only screen and (min-width: 40em) {
+    .footer-hero {
+      border-top: 178px solid #fff;
+      padding-bottom: 128px; } }
+
+.text-uppercase, h1, span, h2, h3, figure figcaption, .mission-statement h3, footer a {
+  text-transform: uppercase; }
+
+.white, h1, span, footer a {
+  color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */

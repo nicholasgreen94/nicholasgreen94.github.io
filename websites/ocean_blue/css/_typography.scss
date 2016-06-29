@@ -1,0 +1,92 @@
+
+//import font
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Amiri:400,700);
+
+// Globals 
+p {
+  font-family: $seconary-font;
+  font-size: $base-font-size;
+  line-height: 1.8;
+}
+
+strong {
+  font-size: $fourth-heading;
+}
+
+i.fa {
+  font-size: $secondary-heading;
+}
+
+// Navigation
+.navbar {
+  a {
+    color: $coral;
+    font-family: $main-font;
+    font-size: $base-font-size;
+    text-transform: uppercase;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+// jumbotron 
+.jumbotron {
+  color: $white;
+  h1 {
+    font-size: $main-heading;
+    font-weight: 700;
+  }
+}
+
+h1,
+h2,
+h3  {
+  @include heading-font;
+}
+
+h2 {
+  font-size: $secondary-heading;
+  &:before,
+  &:after {
+    content: "";
+    display: inline-block;
+    background: $blue;
+    border-radius: 50%;
+    height: 12px;
+    margin: $margin * 6;
+    width: 12px;
+  }
+}
+
+h3 {
+  font-size: $fourth-heading;
+  text-transform: none;
+}
+
+.feature {
+  color: $white;
+}
+
+.staff,
+.contact {
+  h2 {
+    @extend h2;
+    &:before,
+    &:after {
+      background: $coral;
+    }
+  }
+}
+
+.main-footer {
+  a {
+    color: $coral;
+    font-size: 12px;
+    &:hover {
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}

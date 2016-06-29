@@ -1,0 +1,86 @@
+
+@import url("fonts/Butler_Bold.otf");
+
+// .main-header 
+
+body {
+  font-family: $secondary-font;
+}
+
+h1 {
+  @extend .white;
+  @extend .text-uppercase;
+  font-family: $primary-font;
+  font-size: $secondary-heading;
+  padding-top: $padding * 32;
+  margin-bottom: 0;
+  @media only screen and (min-width: 40em) {
+    font-size: $primary-heading;
+  }
+}
+span {
+  @extend .white;
+  @extend .text-uppercase;
+  display: block;
+  font-size: $fourth-heading;
+  font-weight: 200;
+  margin-top: $margin * -6;
+  @media only screen and (min-width: 40em) {
+    margin-top: $margin * -12;
+  }
+}
+
+h2 {
+  @extend .text-uppercase;
+  font-family: $primary-font;
+  font-size: $fourth-heading;
+  @media only screen and (min-width: 40em) {
+    font-size: $third-heading;
+  }
+}
+
+h3 {
+  @extend .text-uppercase;
+  font-family: $secondary-font;
+  font-size: $base-font-size;
+  font-weight: 300;
+  margin: $margin * 24 0 $margin * 48;
+  @media only screen and (min-width: 40em) {
+    font-size: $fourth-heading;
+  }
+}
+
+figure {
+  figcaption {
+    @extend .text-uppercase;
+    font-family: $secondary-font;
+    letter-spacing: 2px;
+    font-size: $small-font-size;
+    padding: $padding * 5 0;
+  }
+}
+
+.mission-statement {
+  h3 {
+    @extend .text-uppercase;
+    font-family: $secondary-font;
+    font-size: $base-font-size;
+    font-weight: 300;
+    margin: $margin * 24 0 $margin * 6;
+    @media only screen and (min-width: 40em) {
+      font-size: $fourth-heading;
+    }
+  }
+  p {
+    font-size: .85em;
+  }
+}
+
+footer {
+  a {
+    @extend .white;
+    @extend .text-uppercase;
+    font-family: $primary-font;
+    font-weight: 700;
+  }
+}

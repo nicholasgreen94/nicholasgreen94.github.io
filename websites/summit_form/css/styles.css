@@ -1,0 +1,119 @@
+
+@import(url("SIMPLIFICA.ttf"));
+
+body {
+  background: 
+    linear-gradient(rgba(100,100,100,.3), rgba(100,100,100,.3)),
+  url("https://images.unsplash.com/25/peak.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=cfd63e29f56049c5f0faffa09f6aa80c"),
+  rgba(202,99,219,.6);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: SIMPLIFICA;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+header {
+  margin: 84px 0 0;
+}
+
+h1 {
+  font-size: 84px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+form {
+  background:   linear-gradient(rgba(98, 29, 93,.6), rgba(98, 29, 93,.6));
+  font-weight: 700;
+  margin: 52px 0;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 24px 0;
+  text-transform: uppercase;
+}
+
+label,
+input {
+ font-size: 28px;
+}
+
+label {
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 -16px 2px;
+  text-transform: uppercase;
+}
+
+input {
+  background: rgba(255,255,255,.4);
+  border: none;
+  color: #fff;
+  height: 32px;
+  margin: 0 0 18px;
+  padding-left: 2px;
+  width: 324px;
+}
+
+input::-webkit-input-placeholder {
+color: #fff;  
+}
+input:-moz-placeholder { /* Firefox 18- */
+color: #fff;  
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #fff;   
+} 
+input:-ms-input-placeholder {  
+color: #fff;  
+}
+
+.btn-primary {
+  background: #a43a9d;
+  border: 1px solid #a43a9d;
+  font-size: 28px;
+  padding: 0 12px;
+  margin-top: 12px;
+}
+
+.btn-primary:hover {
+  background: #cf95bf;
+  border: 1px solid #cf95bf;
+}
+
+span {
+  display: block;
+  font-size: 18px;
+  margin-top: -24px;
+}
+
+span > a {
+  color: #cf95bf;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+span > a:hover {
+  color: #cf95bf;
+}
+
+footer {
+  font-size: 24px;
+  margin-top: 18px;
+  padding-left: 24px;
+}
+
+.fa {
+  display: block;
+  font-size: 64px;
+  margin-top: 36px;
+}

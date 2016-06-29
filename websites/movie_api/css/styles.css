@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+body {
+  background: rgba(25, 27, 27, 0.9);
+  font-family: "Varela Round"; }
+
+.wrapper {
+  margin: 0 auto;
+  padding-top: 96px;
+  width: 90%; }
+
+h1 {
+  color: #eee;
+  font-size: 96px;
+  text-align: center; }
+
+form {
+  text-align: center; }
+
+input[type="text"] {
+  background: rgba(25, 27, 27, 0);
+  border: none;
+  border-bottom: 2px solid #eee;
+  color: #eee;
+  font-size: 30px;
+  height: 30px;
+  letter-spacing: 1px;
+  padding: 0;
+  width: 70%; }
+  input[type="text"]:active {
+    background: rgba(25, 27, 27, 0); }
+  input[type="text"]:focus {
+    outline: none;
+    padding: 0; }
+
+input[placeholder] {
+  font-family: "Varela Round"; }
+
+input[type="submit"] {
+  background: rgba(75, 81, 81, 0);
+  border: none;
+  color: #eee;
+  cursor: pointer;
+  font-family: "Varela Round";
+  font-size: 20px;
+  margin-left: 24px;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  display: inline;
+  font-size: 24px; }
+
+h2,
+h3,
+span {
+  color: #eee; }
+
+span {
+  font-family: "Old Standard TT";
+  font-size: 16px; }
+
+#movieDetails {
+  padding-top: 75px; }
+
+.movie {
+  float: left;
+  margin-right: 25px;
+  width: 600px; }
+
+.poster {
+  float: right; }
+
+img {
+  height: 450px;
+  width: 450px; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*# sourceMappingURL=styles.css.map */

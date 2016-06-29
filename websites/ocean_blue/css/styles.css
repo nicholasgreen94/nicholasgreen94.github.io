@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Amiri:400,700);
+body {
+  position: relative; }
+
+.navbar {
+  background: #fff; }
+
+#feature_section,
+#staff_list,
+#contact_section {
+  height: 100%;
+  overflow-y: scroll;
+  position: relative; }
+
+.jumbotron {
+  background: #053761;
+  border-radius: 0;
+  margin: 0;
+  padding: 128px 0 96px; }
+  @media only screen and (min-width: 720px) {
+    .jumbotron {
+      padding: 224px 0 196px; } }
+
+.feature {
+  background: #ff7f50; }
+
+.contact {
+  background: #053761;
+  color: #fff; }
+
+.main-footer {
+  padding: 10px; }
+  .main-footer h4 {
+    font-size: 1em; }
+
+@media only screen and (min-width: 720px) {
+  .location,
+  .phone {
+    border-right: 2px solid #fff; } }
+
+@media only screen and (min-width: 720px) {
+  .phone {
+    height: 226px; } }
+
+p {
+  font-family: "Amiri";
+  font-size: 1em;
+  line-height: 1.8; }
+
+strong {
+  font-size: 1.5em; }
+
+i.fa {
+  font-size: 3.375em; }
+
+.navbar a {
+  color: #ff7f50;
+  font-family: "Abel";
+  font-size: 1em;
+  text-transform: uppercase; }
+  .navbar a:hover {
+    color: #053761; }
+
+.jumbotron {
+  color: #fff; }
+  .jumbotron h1 {
+    font-size: 5.063em;
+    font-weight: 700; }
+
+h1,
+h2,
+.staff h2,
+.contact h2,
+h3 {
+  font-family: "Abel";
+  text-transform: uppercase; }
+
+h2, .staff h2,
+.contact h2 {
+  font-size: 3.375em; }
+  h2:before, .staff h2:before,
+  .contact h2:before, h2:after, .staff h2:after,
+  .contact h2:after {
+    content: "";
+    display: inline-block;
+    background: #053761;
+    border-radius: 50%;
+    height: 12px;
+    margin: 12px;
+    width: 12px; }
+
+h3 {
+  font-size: 1.5em;
+  text-transform: none; }
+
+.feature {
+  color: #fff; }
+
+.staff h2:before, .staff h2:after,
+.contact h2:before,
+.contact h2:after {
+  background: #ff7f50; }
+
+.main-footer a {
+  color: #ff7f50;
+  font-size: 12px; }
+  .main-footer a:hover {
+    font-weight: 700;
+    text-decoration: none; }
+
+.img-circle {
+  height: 200px;
+  width: 200px; }
+
+img {
+  border: 8px solid #ff7f50; }
+
+/*# sourceMappingURL=styles.css.map */

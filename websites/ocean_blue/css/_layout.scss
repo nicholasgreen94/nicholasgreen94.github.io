@@ -1,0 +1,58 @@
+
+body {
+  position: relative;
+}
+
+// Header 
+.navbar {
+  background: $white;
+}
+
+#feature_section,
+#staff_list,
+#contact_section {
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+// Jumbotron 
+.jumbotron {
+  background: $blue;
+  border-radius: 0;
+  margin: 0;
+  padding: $padding * 64 0 $padding * 48;
+  @media only screen and (min-width: $medium) {
+    padding: $padding * 112 0 $padding * 98;
+  }
+}
+
+// Feature 
+.feature {
+  background: $coral;
+}
+
+.contact {
+  background: $blue;
+  color: $white;
+}
+
+.main-footer {
+  padding: $padding * 5;
+  h4 {
+    font-size: $base-font-size;
+  }
+}
+
+.location,
+.phone {
+  @media only screen and (min-width: $medium) {
+  border-right: 2px solid $white;
+  }
+}
+
+.phone {
+  @media only screen and (min-width: $medium) {
+  height: 226px;
+  }
+}
