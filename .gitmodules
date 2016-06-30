@@ -1,3 +1,6 @@
 [submodule "websites/nicholasgreen94.github.io"]
 	path = websites/nicholasgreen94.github.io
 	url = https://github.com/nicholasgreen94/nicholasgreen94.github.io.git
+[submodule "digim_marketing"]
+	path = digim_marketing
+	url = https://github.com/nicholasgreen94/digim_marketing.git
