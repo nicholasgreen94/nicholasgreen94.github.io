@@ -44,7 +44,7 @@ body {
     height: 226px; } }
 
 p {
-  font-family: "Amiri";
+  font-family: "Amiri", georgia, serif;
   font-size: 1em;
   line-height: 1.8; }
 
@@ -56,7 +56,7 @@ i.fa {
 
 .navbar a {
   color: #ff7f50;
-  font-family: "Abel";
+  font-family: "Abel", helvetica, arial, verdana, sans-serif;
   font-size: 1em;
   text-transform: uppercase; }
   .navbar a:hover {
@@ -73,7 +73,7 @@ h2,
 .staff h2,
 .contact h2,
 h3 {
-  font-family: "Abel";
+  font-family: "Abel", helvetica, arial, verdana, sans-serif;
   text-transform: uppercase; }
 
 h2, .staff h2,
