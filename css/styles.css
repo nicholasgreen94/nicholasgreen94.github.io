@@ -73,6 +73,10 @@
   }
 }
 */
+@media only screen and (min-width: 64em) {
+  .subjects {
+    padding: 18px 0; } }
+
 .contact {
   margin-bottom: 36px; }
   .contact form [type="text"],

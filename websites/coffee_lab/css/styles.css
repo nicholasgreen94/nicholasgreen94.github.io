@@ -252,7 +252,8 @@ label {
   text-shadow: 90px 60px 0px #333; }
 
 .sustain {
-  background: url("https://images.unsplash.com/photo-1445883791079-421522d11f18?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8dd0ffc45eb5acb2b6c36c029974dd78") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1445883791079-421522d11f18?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8dd0ffc45eb5acb2b6c36c029974dd78");
+  background-repeat: no-repeat;
   background-size: cover;
   border-radius: 6px;
   margin-top: 52px;
