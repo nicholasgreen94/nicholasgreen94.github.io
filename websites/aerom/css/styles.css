@@ -11,15 +11,6 @@ h1 {
     h1 {
       font-size: 5.063em; } }
 
-span {
-  display: block;
-  font-size: 1.5em;
-  font-weight: 200;
-  margin-top: -12px; }
-  @media only screen and (min-width: 40em) {
-    span {
-      margin-top: -24px; } }
-
 h2 {
   font-family: Butler, Baskerville;
   font-size: 1.5em; }
@@ -35,6 +26,51 @@ h3 {
   @media only screen and (min-width: 40em) {
     h3 {
       font-size: 1.5em; } }
+
+h4 {
+  color: #424141;
+  font-family: Butler, Baskerville;
+  font-size: 1em;
+  padding-top: 14px; }
+  @media only screen and (min-width: 40em) {
+    h4 {
+      font-size: 1.5em;
+      padding-top: 24px; } }
+
+span {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-top: -12px; }
+  @media only screen and (min-width: 40em) {
+    span {
+      margin-top: -24px; } }
+
+.company-info h2 {
+  margin-bottom: -16px; }
+
+blockquote {
+  color: #424141;
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: -8px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 10px; }
+  @media only screen and (min-width: 40em) {
+    blockquote {
+      padding-bottom: 20px; } }
+
+hr {
+  border-bottom: 1px solid #424141;
+  transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  width: 50px; }
+  @media only screen and (min-width: 40em) {
+    hr {
+      width: 75px; } }
 
 figure figcaption {
   font-family: "Fira Sans", Helvetica, arial, verdana, sans-serif;
@@ -87,6 +123,35 @@ body {
       border-bottom: 178px solid #fff;
       padding-top: 128px; } }
 
+.company-info {
+  margin-top: 48px;
+  margin-bottom: 25px; }
+  @media only screen and (min-width: 40em) {
+    .company-info {
+      margin-bottom: 50px; } }
+
+.banner {
+  background: linear-gradient(rgba(100, 100, 100, 0.35), rgba(100, 100, 100, 0.35)), url("https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8634efa3c37ba746fcddfe27388d9fb");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 38px; }
+  @media only screen and (min-width: 40em) {
+    .banner {
+      margin-bottom: 74px; } }
+
+.banner-hero {
+  overflow: hidden;
+  border-top: 64px solid #fff;
+  border-bottom: 64px solid #fff;
+  border-right: 100vw solid transparent;
+  padding-bottom: 48px; }
+  @media only screen and (min-width: 40em) {
+    .banner-hero {
+      border-top: 96px solid #fff;
+      border-bottom: 96px solid #fff;
+      padding-bottom: 128px; } }
+
 footer {
   background: linear-gradient(rgba(100, 100, 100, 0.35), rgba(100, 100, 100, 0.35)), url("https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=260080a969c372cbc90f7e944d705830");
   background-position: 50% 50%;
@@ -103,7 +168,7 @@ footer {
       border-top: 178px solid #fff;
       padding-bottom: 128px; } }
 
-.text-uppercase, h1, span, h2, h3, figure figcaption, .mission-statement h3, footer a {
+.text-uppercase, h1, h2, h3, h4, span, blockquote, figure figcaption, .mission-statement h3, footer a {
   text-transform: uppercase; }
 
 .white, h1, span, footer a {

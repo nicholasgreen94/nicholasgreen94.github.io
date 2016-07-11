@@ -18,17 +18,6 @@ h1 {
     font-size: $primary-heading;
   }
 }
-span {
-  @extend .white;
-  @extend .text-uppercase;
-  display: block;
-  font-size: $fourth-heading;
-  font-weight: 200;
-  margin-top: $margin * -6;
-  @media only screen and (min-width: 40em) {
-    margin-top: $margin * -12;
-  }
-}
 
 h2 {
   @extend .text-uppercase;
@@ -47,6 +36,62 @@ h3 {
   margin: $margin * 24 0 $margin * 48;
   @media only screen and (min-width: 40em) {
     font-size: $fourth-heading;
+  }
+}
+
+h4 {
+  color: #424141;
+  @extend .text-uppercase;
+  font-family: $primary-font;
+  font-size: $base-font-size;
+  padding-top: $padding * 7;
+  @media only screen and (min-width: 40em) {
+    font-size: $fourth-heading;
+    padding-top: $padding * 12;
+  }
+}
+
+span {
+  @extend .white;
+  @extend .text-uppercase;
+  display: block;
+  font-size: $fourth-heading;
+  font-weight: 200;
+  margin-top: $margin * -6;
+  @media only screen and (min-width: 40em) {
+    margin-top: $margin * -12;
+  }
+}
+
+.company-info {
+  h2 {
+    margin-bottom: $margin * -8;
+  }
+}
+
+blockquote {
+  @extend .text-uppercase;
+  color: #424141;
+  font-size: $base-font-size;
+  font-weight: 300;
+  margin-top: -8px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: $margin * 5;
+  @media only screen and (min-width: 40em) {
+    padding-bottom: $margin * 10;
+  }
+}
+
+hr {
+  border-bottom: 1px solid #424141;
+  transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  width: 50px;
+  @media only screen and (min-width: 40em) {
+    width: 75px;
   }
 }
 

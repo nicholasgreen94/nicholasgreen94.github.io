@@ -1,10 +1,22 @@
 $(function() {
   
 // initial variables
+var webpage = $("html, body");
 var $project_p = $(".project-p");
 var $btn_wrap = $(".btn-wrap");
 var $btn_reveal = $(".btn-reveal");
 var $btn_minimize = $(".btn-minimize");
+
+/*
+$(".navlink").on("click", function(event) {
+  event.preventDefault();
+  event.stopPropagation;
+  webpage.stop().animate({
+    scrollTop: $($(this).attr("href")).offset().top
+  }, 2000, "easeInCubic");
+})
+*/
+
 
 // initially hiding work
 $project_p.hide();

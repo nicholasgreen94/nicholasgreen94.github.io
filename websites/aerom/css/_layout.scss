@@ -37,6 +37,40 @@ body {
   }
 }
 
+.company-info {
+  margin-top: $margin * 24;
+  margin-bottom: $margin * 12.5;
+  @media only screen and (min-width: 40em) {
+    margin-bottom: $margin * 25;
+  }
+}
+
+.banner {
+  background: 
+  linear-gradient(rgba(100,100,100,0.35), rgba(100,100,100,0.35)),
+  url("https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8634efa3c37ba746fcddfe27388d9fb");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: $margin * 19;
+  @media only screen and (min-width: 40em) {
+    margin-bottom: $margin * 37;
+  }
+}
+
+.banner-hero {
+  overflow: hidden;
+  border-top: 64px solid $white;
+  border-bottom: 64px solid $white;
+  border-right: 100vw solid transparent;
+  padding-bottom: $padding* 24;
+  @media only screen and (min-width: 40em) {
+    border-top: 96px solid $white;
+    border-bottom: 96px solid $white;
+    padding-bottom: $padding * 64;
+  }
+}
+
 footer {
   background: 
   linear-gradient(rgba(100,100,100,0.35), rgba(100,100,100,0.35)),
