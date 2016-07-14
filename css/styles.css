@@ -2,7 +2,7 @@
 /* Black */
 /* Social Media colors */
 .main-header {
-  background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"); }
+  background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"), #615656; }
 
 .title-bar,
 .top-bar,
@@ -55,12 +55,12 @@
     background: #fff; }
 
 .web {
-  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/macbook.jpg"); }
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/macbook.jpg"), #615656; }
   .web a:hover {
     color: #615656; }
 
 .design {
-  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/notebook.jpg"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.75), rgba(194, 155, 112, 0.75)), url("../images/notebook.jpg"), #C29B71; }
   .design a:hover {
     color: #C29B71; }
 
@@ -88,7 +88,7 @@
     height: 5.25rem; }
 
 .main-footer {
-  background: url("https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=231736de0bc92d79a6ee049208b9c283");
+  background: url("https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=231736de0bc92d79a6ee049208b9c283"), #615656;
   padding-top: 16px; }
 
 .project-initial {
@@ -114,34 +114,34 @@
       padding: 60px 0; } }
 
 .web-project-1 {
-  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/aerom.png"); }
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/aerom.png"), #615656; }
 
 .web-project-2 {
-  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/digim.png"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/digim.png"), #C29B71; }
 
 .web-project-3 {
-  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/ocean_blue.png"); }
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/ocean_blue.png"), #615656; }
 
 .web-project-4 {
-  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/movie_api.png"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/movie_api.png"), #C29B71; }
 
 .web-project-5 {
-  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/form.png"); }
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/form.png"), #615656; }
 
 .web-project-6 {
-  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/coffee_lab.png"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/coffee_lab.png"), #C29B71; }
 
 .design-project-1 {
-  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/compass.jpg"); }
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/compass.jpg"), #615656; }
 
 .design-project-2 {
-  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/Aerom_Landing_Page.jpg"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/Aerom_Landing_Page.jpg"), #C29B71; }
 
 .design-project-3 {
-  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/evergreen_collective.jpg"); }
+  background: linear-gradient(rgba(43, 38, 38, 0.75), rgba(43, 38, 38, 0.75)), url("../images/evergreen_collective.jpg"), #615656; }
 
 .design-project-4 {
-  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/Lemon_Twist.jpg"); }
+  background: linear-gradient(rgba(194, 155, 112, 0.95), rgba(194, 155, 112, 0.95)), url("../images/Lemon_Twist.jpg"), #C29B71; }
 
 body {
   color: #615656;
