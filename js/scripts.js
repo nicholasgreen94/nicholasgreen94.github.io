@@ -37,19 +37,19 @@ $btn_reveal.on("click", function() {
             
   $(this).parent(".project")
             .removeClass("project-initial").addClass("project-click")
-            .parent("div")
+            .parent("section")
             .removeClass("large-5 large-offset-1")
             .addClass("large-offset-1 large-10");
             
   $(this).parent(".project")
-            .parent("div")
-            .next("div")
+            .parent("section")
+            .next("section")
             .removeClass("large-5 large-offset-1 large-offset-0 end")
             .addClass("large-offset-1 large-10 end");
             
   $(this).parent(".project")
-            .parent("div")
-            .prev("div")
+            .parent("section")
+            .prev("section")
             .removeClass("large-5 large-offset-1 large-offset-0 end")
             .addClass("large-offset-1 large-10");
 });
