@@ -1,0 +1,10 @@
+
+.button {  
+  @extend .text-uppercase;  
+  background: $navy_blue;
+  display: block;
+  margin: $margin * 4 auto $margin * 8;
+  &:hover {
+    background: lighten($navy_blue, 10%);
+  }
+}

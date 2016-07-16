@@ -7,6 +7,12 @@ body {
   font-family: $secondary-font;
 }
 
+a {
+  &:hover {
+    color: $navy_blue;
+  }
+}
+
 h1 {
   @extend .white;
   @extend .text-uppercase;
@@ -40,7 +46,7 @@ h3 {
 }
 
 h4 {
-  color: #424141;
+  color:$grey;
   @extend .text-uppercase;
   font-family: $primary-font;
   font-size: $base-font-size;
@@ -71,7 +77,7 @@ span {
 
 blockquote {
   @extend .text-uppercase;
-  color: #424141;
+  color: $grey;
   font-size: $base-font-size;
   font-weight: 300;
   margin-top: -8px;
@@ -84,7 +90,7 @@ blockquote {
 }
 
 hr {
-  border-bottom: 1px solid #424141;
+  border-bottom: 1px solid$grey;
   transform:rotate(90deg);
   -o-transform:rotate(90deg);
   -moz-transform:rotate(90deg);
@@ -105,6 +111,10 @@ figure {
   }
 }
 
+address {
+  font-style: normal;
+}
+
 .mission-statement {
   h3 {
     @extend .text-uppercase;
@@ -120,6 +130,33 @@ figure {
     font-size: .85em;
   }
 }
+
+.collection {
+  p {
+    font-size: 0.75em;
+    padding: $padding * 6 $padding * 6 0;
+    @media only screen and (min-width: 64em) {
+      font-size: $small-font-size;
+      padding: $padding * 12 $padding * 12 0;
+    }
+  }
+}
+
+
+.contact {
+  color: $grey;
+  .contact-method {
+    padding: $padding * 8 0;
+    i {
+      color: $grey;
+      font-size: $secondary-heading;
+      font-weight: 100;
+      margin-bottom: $margin * 4;
+    }
+  }
+}
+
+
 
 footer {
   a {

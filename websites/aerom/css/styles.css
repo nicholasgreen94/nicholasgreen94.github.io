@@ -2,6 +2,9 @@
 body {
   font-family: "Fira Sans", Helvetica, arial, verdana, sans-serif; }
 
+a:hover {
+  color: #003366; }
+
 h1 {
   font-family: Butler, Baskerville;
   font-size: 3.375em;
@@ -78,6 +81,9 @@ figure figcaption {
   font-size: 0.85em;
   padding: 10px 0; }
 
+address {
+  font-style: normal; }
+
 .mission-statement h3 {
   font-family: "Fira Sans", Helvetica, arial, verdana, sans-serif;
   font-size: 1em;
@@ -88,6 +94,24 @@ figure figcaption {
       font-size: 1.5em; } }
 .mission-statement p {
   font-size: .85em; }
+
+.collection p {
+  font-size: 0.75em;
+  padding: 12px 12px 0; }
+  @media only screen and (min-width: 64em) {
+    .collection p {
+      font-size: 0.85em;
+      padding: 24px 24px 0; } }
+
+.contact {
+  color: #424141; }
+  .contact .contact-method {
+    padding: 16px 0; }
+    .contact .contact-method i {
+      color: #424141;
+      font-size: 3.375em;
+      font-weight: 100;
+      margin-bottom: 8px; }
 
 footer a {
   font-family: Butler, Baskerville;
@@ -105,13 +129,24 @@ body {
 
 .title-bar {
   background: transparent; }
+  .title-bar .menu-icon:hover::after {
+    background: #003366;
+    box-shadow: 0 7px 0 #003366, 0 14px 0 #003366; }
+  .title-bar .menu-icon:focus {
+    outline: none; }
 
 #navigation {
   background: transparent; }
   #navigation ul {
     background: transparent; }
     #navigation ul li > a {
-      color: #fff; }
+      color: #fff;
+      font-size: 0.85em; }
+      @media only screen and (min-width: 40em) {
+        #navigation ul li > a {
+          font-size: 1em; } }
+      #navigation ul li > a:hover {
+        color: #003366; }
 
 .hero {
   overflow: hidden;
@@ -129,6 +164,20 @@ body {
   @media only screen and (min-width: 40em) {
     .company-info {
       margin-bottom: 50px; } }
+
+.collection {
+  margin: 12px 0; }
+  @media only screen and (min-width: 40em) {
+    .collection {
+      margin: 0; } }
+  .collection .notebook {
+    padding: 12px 0; }
+    @media only screen and (min-width: 40em) {
+      .collection .notebook {
+        padding: 36px 0; } }
+    @media only screen and (min-width: 40em) {
+      .collection .notebook img {
+        width: 100%; } }
 
 .banner {
   background: linear-gradient(rgba(100, 100, 100, 0.35), rgba(100, 100, 100, 0.35)), url("https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a8634efa3c37ba746fcddfe27388d9fb");
@@ -152,6 +201,11 @@ body {
       border-bottom: 96px solid #fff;
       padding-bottom: 128px; } }
 
+.contact {
+  margin-top: 48px; }
+  .contact .contact-info {
+    margin-top: 24px; }
+
 footer {
   background: linear-gradient(rgba(100, 100, 100, 0.35), rgba(100, 100, 100, 0.35)), url("https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=260080a969c372cbc90f7e944d705830");
   background-position: 50% 50%;
@@ -168,10 +222,17 @@ footer {
       border-top: 178px solid #fff;
       padding-bottom: 128px; } }
 
-.text-uppercase, h1, h2, h3, h4, span, blockquote, figure figcaption, .mission-statement h3, footer a {
+.text-uppercase, h1, h2, h3, h4, span, blockquote, figure figcaption, .mission-statement h3, footer a, #navigation ul li > a, .button {
   text-transform: uppercase; }
 
 .white, h1, span, footer a {
   color: #fff; }
+
+.button {
+  background: #003366;
+  display: block;
+  margin: 8px auto 16px; }
+  .button:hover {
+    background: #004d99; }
 
 /*# sourceMappingURL=styles.css.map */

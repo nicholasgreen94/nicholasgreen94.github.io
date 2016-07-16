@@ -15,6 +15,16 @@ body {
 }
 .title-bar {
   background: transparent;
+  .menu-icon {
+    
+    &:hover::after {
+      background: $navy_blue;
+      box-shadow: 0 7px 0 $navy_blue,0 14px 0 $navy_blue;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
 }
 #navigation {
   background: transparent;
@@ -22,6 +32,14 @@ body {
     background: transparent;
     li > a {
       color: $white;
+      font-size: $small-font-size;
+      @extend .text-uppercase;
+      @media only screen and (min-width: 40em) {
+        font-size: $base-font-size;
+      }
+      &:hover {
+        color: $navy_blue;
+      }
     }
   }
 }
@@ -42,6 +60,24 @@ body {
   margin-bottom: $margin * 12.5;
   @media only screen and (min-width: 40em) {
     margin-bottom: $margin * 25;
+  }
+}
+
+.collection {
+  margin: $margin * 6 0;
+  @media only screen and (min-width: 40em) {
+    margin: 0;
+  }
+  .notebook {
+    padding: $margin * 6 0;
+    @media only screen and (min-width: 40em) {
+      padding: $margin * 18 0;
+    }
+    img {
+      @media only screen and (min-width: 40em) {
+      width: 100%;
+    }
+    }
   }
 }
 
@@ -68,6 +104,13 @@ body {
     border-top: 96px solid $white;
     border-bottom: 96px solid $white;
     padding-bottom: $padding * 64;
+  }
+}
+
+.contact {
+  margin-top: $margin * 24;
+  .contact-info {
+    margin-top: $margin * 12;
   }
 }
 
