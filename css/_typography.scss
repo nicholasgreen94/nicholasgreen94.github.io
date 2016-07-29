@@ -1,58 +1,8 @@
 
+// Global typography 
 body {
   color: $black;
   font-family: $primary-font;
-}
-p {
-  line-height: 1.8;
-  font-family: $secondary-font;
-  font-size: $small-font-size;
-  @media only screen and (min-width: 40em) {
-    font-size: $base-font-size;
-  }
-}
-
-li {
-  list-style: none;
-}
-
-.main-header {
-  h1, 
-  a {
-    @extend .white;
-    @extend .text-uppercase;
-    font-family: $primary-font;
-  }
-  h1 {
-    font-size: $secondary-heading;
-    @media only screen and (min-width: 40em) {
-      font-size: $primary-heading;
-    }
-  }
-}
-
-.menu {
-  a {
-    &:hover {
-      color: $blue;
-    } 
-  }
-}
-
-.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
-  border-color: $white transparent transparent;
-  right: 10px;
-  top: 16px;
-}
-
-.main-header,
-.main-footer {
-  li > a {
-    @extend .white;
-    @extend .text-uppercase;
-    font-size: $small-font-size;
-    padding: .75em;
-  }
 }
 
 h2,
@@ -81,6 +31,60 @@ h3 {
   }
 }
 
+p {
+  line-height: 1.8;
+  font-family: $secondary-font;
+  font-size: $small-font-size;
+  @media only screen and (min-width: 40em) {
+    font-size: $base-font-size;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+// .main-header
+.main-header {
+  h1, 
+  a {
+    @extend .white;
+    @extend .text-uppercase;
+    font-family: $primary-font;
+  }
+  h1 {
+    font-size: $secondary-heading;
+    @media only screen and (min-width: 40em) {
+      font-size: $primary-heading;
+    }
+  }
+}
+
+//.navigation
+.menu {
+  a {
+    &:hover {
+      color: darken($black, 20%);
+    } 
+  }
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+  border-color: $white transparent transparent;
+  right: 10px;
+  top: 16px;
+}
+//.main-header and .main-footer default styles
+.main-header,
+.main-footer {
+  li > a {
+    @extend .white;
+    @extend .text-uppercase;
+    font-size: $small-font-size;
+    padding: .75em;
+  }
+}
+
 .work-header,
 .about-header,
 .contact-header,
@@ -93,6 +97,7 @@ h3 {
   }
 }
 
+// .about
 .about {
   p {
     &:last-of-type {
@@ -119,7 +124,7 @@ a[href*="http://"] {
   @extend .a-text;
 }
 
-// Social Media Icons
+// .social-media icons
 .social-media {
   margin-top: $margin * 12;
   a {
@@ -135,7 +140,7 @@ a[href*="http://"] {
   }
 }
 
-// Social media hovers 
+// .social-media hovers 
 .fa-twitter {
   &:hover {
     color: $twitter;

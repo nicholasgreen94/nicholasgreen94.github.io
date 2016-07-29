@@ -1,7 +1,8 @@
 
 // main-header
 .main-header {
-  background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"), $black;
+  background: $secondary-black-overlay,
+    url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"), $black;
   @extend .background-default;
 }
 
@@ -28,7 +29,7 @@
   }
 }
 
-// Work 
+// .work 
 .work {
   .work-section {
     border-bottom: 2px solid $white;
@@ -46,9 +47,17 @@
   }
 }
 
+// section headers
 .work-header,
 .about-header,
-.contact-header,
+.contact-header {
+  padding: $padding * 12 0 $padding * 18;
+  @media only screen and (min-width: 40em) {
+    padding: $padding * 24 0 $padding * 48;
+  }
+}
+
+// section headers
 .web-header,
 .design-header {
   padding: $padding * 24 0 $padding * 48;

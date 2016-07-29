@@ -2,7 +2,7 @@
 /* Black */
 /* Social Media colors */
 .main-header {
-  background: url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"), #615656; }
+  background: linear-gradient(rgba(43, 38, 38, 0.25), rgba(43, 38, 38, 0.25)), url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"), #615656; }
 
 .title-bar,
 .top-bar,
@@ -39,7 +39,14 @@
 
 .work-header,
 .about-header,
-.contact-header,
+.contact-header {
+  padding: 24px 0 36px; }
+  @media only screen and (min-width: 40em) {
+    .work-header,
+    .about-header,
+    .contact-header {
+      padding: 48px 0 96px; } }
+
 .web-header,
 .design-header {
   padding: 48px 0 96px; }
@@ -147,39 +154,6 @@ body {
   color: #615656;
   font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif; }
 
-p {
-  line-height: 1.8;
-  font-family: "Mate", Georgia, serif;
-  font-size: 0.85em; }
-  @media only screen and (min-width: 40em) {
-    p {
-      font-size: 1em; } }
-
-li {
-  list-style: none; }
-
-.main-header h1,
-.main-header a {
-  font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif; }
-.main-header h1 {
-  font-size: 4.275em; }
-  @media only screen and (min-width: 40em) {
-    .main-header h1 {
-      font-size: 5.063em; } }
-
-.menu a:hover {
-  color: #1780ba; }
-
-.dropdown.menu > li.is-dropdown-submenu-parent > a:after {
-  border-color: #fff transparent transparent;
-  right: 10px;
-  top: 16px; }
-
-.main-header li > a,
-.main-footer li > a {
-  font-size: 0.85em;
-  padding: .75em; }
-
 h2,
 h3 {
   font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif; }
@@ -201,6 +175,39 @@ h3 {
       font-size: 2.25em;
       padding-top: 36px;
       text-align: center; } }
+
+p {
+  line-height: 1.8;
+  font-family: "Mate", Georgia, serif;
+  font-size: 0.85em; }
+  @media only screen and (min-width: 40em) {
+    p {
+      font-size: 1em; } }
+
+li {
+  list-style: none; }
+
+.main-header h1,
+.main-header a {
+  font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif; }
+.main-header h1 {
+  font-size: 4.275em; }
+  @media only screen and (min-width: 40em) {
+    .main-header h1 {
+      font-size: 5.063em; } }
+
+.menu a:hover {
+  color: #2b2626; }
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a:after {
+  border-color: #fff transparent transparent;
+  right: 10px;
+  top: 16px; }
+
+.main-header li > a,
+.main-footer li > a {
+  font-size: 0.85em;
+  padding: .75em; }
 
 .work-header span,
 .about-header span,
@@ -287,10 +294,10 @@ button[type=submit] {
 .btn-wrap a, .project-p, button {
   color: #fff; }
 
-.text-uppercase, .main-header h1,
+.text-uppercase, h2,
+h3, .main-header h1,
 .main-header a, .main-header li > a,
-.main-footer li > a, h2,
-h3, .btn-wrap, button, button[type=submit] {
+.main-footer li > a, .btn-wrap, button, button[type=submit] {
   text-transform: uppercase; }
 
 .background-default, .main-header, .web, .design, .main-footer, .web-project-1, .web-project-2, .web-project-3, .web-project-4, .web-project-5, .web-project-6, .design-project-1, .design-project-2, .design-project-3, .design-project-4 {
