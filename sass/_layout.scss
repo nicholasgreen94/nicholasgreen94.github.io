@@ -1,8 +1,7 @@
 
 // main-header
 .main-header {
-  background: $secondary-black-overlay,
-    url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"), $black;
+  @include background($secondary-black-overlay, url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"), $black);
   @extend .background-default;
 }
 
@@ -76,28 +75,19 @@
 }
 
 .web {
-  background: $black-overlay, url("../images/macbook.jpg"), $black;
+  @include background($black-overlay, image-url("macbook.jpg"), $black);
   @extend .background-default;
   a:hover {
     color: $black;
   }
 }
 .design {
-  background: $gold-overlay, url("../images/notebook.jpg"), $gold;
+  @include background($gold-overlay, image-url("notebook.jpg"), $gold);
   @extend .background-default;
   a:hover {
     color: $gold;
   }
 }
-/*
-.photography {
-  background: $blue-overlay, url("../images/camera.jpg");
-  @extend .background-default;
-  a:hover {
-    color: $blue;
-  }
-}
-*/
 
 .subjects {
   @media only screen and (min-width: 64em) {
@@ -121,7 +111,7 @@ form {
 }
 
 .main-footer {
-  background: url("https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=231736de0bc92d79a6ee049208b9c283"), $black;
+  @include background($secondary-black-overlay, url("https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=231736de0bc92d79a6ee049208b9c283"), $black);
   @extend .background-default;
   padding-top: $padding * 8;
 }
@@ -129,27 +119,36 @@ form {
 ///////////////////////////
 /// project pages ///
 //////////////////////////
+
+.project-description {
+  background: $black;
+  color: $white;
+  padding: $padding * 12;
+  li {
+    display: inline-block;
+  }
+}
+
 .project-initial {
   margin-bottom: $margin * 12;
-  padding: $padding * 48 0;
+  padding: $padding * 62 0;
+  @include transition(2s);
   @media only screen and (min-width: 40em) {
-    padding: $padding * 56 0;
+    padding: $padding * 72 0;
   }
   @media only screen and (min-width: 64em) {
     margin-bottom: $margin * 14;
-    padding: $padding * 64 0;
+    padding: $padding * 78 0;
   }
 }
 
 .project-click {
   margin-bottom: $margin * 12;
-  padding: $padding * 24 0;
+  @include transition(2s);
   @media only screen and (min-width: 40em) {
-    padding: $padding * 24 0;
   }
   @media only screen and (min-width: 64em) {
     margin-bottom: $margin * 14;
-    padding: $padding * 30 0;
   }
 }
 
@@ -157,27 +156,33 @@ form {
 /// web design & development ///
 ////////////////////////////////////////////
 .web-project-1 {
-  background: $black-overlay, url("../images/aerom.png"), $black;
+  border: 1px solid $black;
+  @include background(image-url("aerom.png"), $black);
   @extend .background-default;
 }
 .web-project-2 {
-  background: $secondary-gold-overlay, url("../images/digim.png"), $gold;
+  border: 1px solid $black;
+  @include background(image-url("digim.png"), $gold);
   @extend .background-default;
 }
 .web-project-3 {
-  background: $black-overlay, url("../images/ocean_blue.png"), $black;
+  border: 1px solid $black;
+  @include background(image-url("ocean_blue.png"), $black);
   @extend .background-default;
 }
 .web-project-4 {
-  background: $secondary-gold-overlay, url("../images/movie_api.png"), $gold;
+  border: 1px solid $black;
+  @include background(image-url("movie_api.png"), $gold);
   @extend .background-default;
 }
 .web-project-5 {
-  background: $black-overlay, url("../images/form.png"), $black;
+  border: 1px solid $black;
+  @include background(image-url("form.png"), $black);
   @extend .background-default;
 }
 .web-project-6 {
-  background: $secondary-gold-overlay, url("../images/coffee_lab.png"), $gold;
+  border: 1px solid $black;
+  @include background(image-url("coffee_lab.png"), $gold);
   @extend .background-default;
 }
 
@@ -185,18 +190,22 @@ form {
 /// design ///////////////////////////////
 ////////////////////////////////////////////
 .design-project-1 {
-  background: $black-overlay, url("../images/compass.jpg"), $black;
+  border: 1px solid $black;
+  @include background(image-url("compass.jpg"), $black);
   @extend .background-default;
 }
 .design-project-2 {
-  background: $secondary-gold-overlay, url("../images/Aerom_Landing_Page.jpg"), $gold;
+  border: 1px solid $black;
+  @include background(image-url("Aerom_Landing_Page.jpg"), $gold);
   @extend .background-default;
 }
 .design-project-3 {
-  background: $black-overlay, url("../images/evergreen_collective.jpg"), $black;
+  border: 1px solid $black;
+  @include background(image-url("evergreen_collective.jpg"), $black);
   @extend .background-default;
 }
 .design-project-4 {
-  background: $secondary-gold-overlay, url("../images/Lemon_Twist.jpg"), $gold;
+  border: 1px solid $black;
+  @include background(image-url("Lemon_Twist.jpg"), $gold);
   @extend .background-default;
 }

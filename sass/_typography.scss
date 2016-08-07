@@ -5,6 +5,13 @@ body {
   font-family: $primary-font;
 }
 
+h1 {
+  font-size: $secondary-heading;
+  @media only screen and (min-width: 40em) {
+    font-size: $primary-heading;
+  }
+}
+
 h2,
 h3 {
   @extend .text-uppercase;
@@ -31,6 +38,12 @@ h3 {
   }
 }
 
+h4 {
+  @extend .text-uppercase;
+  font-size: $fourth-heading;
+  margin-bottom: $margin * 5;
+}
+
 p {
   line-height: 1.8;
   font-family: $secondary-font;
@@ -44,6 +57,10 @@ li {
   list-style: none;
 }
 
+hr {
+  border-bottom: 1px solid $gold;
+}
+
 // .main-header
 .main-header {
   h1, 
@@ -52,19 +69,13 @@ li {
     @extend .text-uppercase;
     font-family: $primary-font;
   }
-  h1 {
-    font-size: $secondary-heading;
-    @media only screen and (min-width: 40em) {
-      font-size: $primary-heading;
-    }
-  }
 }
 
 //.navigation
 .menu {
   a {
     &:hover {
-      color: darken($black, 20%);
+      color: $gold;
     } 
   }
 }
@@ -148,7 +159,8 @@ a[href*="http://"] {
 }
 .fa-instagram {
   &:hover {
-    color: $instagram;
+    color: $instagram
+    ;
   }
 }
 .fa-github {
@@ -166,25 +178,13 @@ a[href*="http://"] {
   margin-bottom: 0;
 }
 
-.btn-wrap {
-  @extend .text-uppercase;
-  margin-top: $margin * 24;
-  button,
-  a {
-    @extend .white;
-    display: inline-block;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin: 0 $margin * 8;
-  }
-}
-
 .project-p {
   @extend .white;
-  padding: 0 $padding * 9;
   .project-a {
     &:hover {
       color: $black;
     } 
   }
 }
+
+

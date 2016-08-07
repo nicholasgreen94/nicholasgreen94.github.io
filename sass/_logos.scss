@@ -1,0 +1,9 @@
+
+.light-logo {
+  margin-right: $margin * -5.5;
+  vertical-align: middle;
+  width: 57px;
+  @media only screen and (min-width: 40em) {
+    width: 67.75px;
+  }
+}

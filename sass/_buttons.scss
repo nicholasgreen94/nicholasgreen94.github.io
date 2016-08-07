@@ -1,13 +1,32 @@
 
 button {
-  @extend .white;
   @extend .text-uppercase;
 }
 
 .btn-reveal {
+  color: $black;
   font-weight: 700;
   letter-spacing: 2px;
+  margin-bottom: $margin * 12;
   padding: $padding * 2;
+  @extend btn-hover;
+}
+
+.btn-wrap {
+  @extend .text-uppercase;
+  margin: $margin * 12 0;
+  @media only screen and (min-width: 40em) {
+    margin-top: $margin * 18;
+  }
+  button,
+  a {
+    color: $black;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 $margin * 8;
+    @extend btn-hover;
+  }
 }
 
 button[type=submit] {

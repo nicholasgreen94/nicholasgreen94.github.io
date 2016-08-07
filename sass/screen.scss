@@ -1,8 +1,5 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+ 
+//Resets
 @import "compass/reset";
 @import "compass/css3";
 
@@ -11,5 +8,6 @@
 @import "_layout.scss";
 @import "_typography.scss";
 @import "_buttons.scss";
+@import "_logos.scss";
 @import "_keyframes.scss";
 @import "_extend.scss";

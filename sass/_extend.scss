@@ -21,3 +21,9 @@
     color: $gold;
   }
 }
+
+btn-hover {
+  &:hover {
+    color: darken($black, 20%);
+  }
+}
