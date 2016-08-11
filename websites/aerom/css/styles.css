@@ -1,4 +1,7 @@
-@import url("fonts/Butler_Bold.otf");
+@font-face {
+  font-family: 'Butler';
+  src: url("fonts/Butler_Regular.otf");
+  src: local("Butler_Regular"), local("Butler_Regular"), url("fonts/Butler_Regular.otf") format("opentype"); }
 body {
   font-family: "Fira Sans", Helvetica, arial, verdana, sans-serif; }
 
@@ -8,6 +11,7 @@ a:hover {
 h1 {
   font-family: Butler, Baskerville;
   font-size: 3.375em;
+  font-weight: 400;
   padding-top: 64px;
   margin-bottom: 0; }
   @media only screen and (min-width: 40em) {

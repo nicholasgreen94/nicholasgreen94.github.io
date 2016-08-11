@@ -273,61 +273,73 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 158, ../sass/_layout.scss */
-.web-project-1 {
+.dapper {
+  border: 1px solid #615656;
+  background: url('../images/dapper.png?1470711986'), #615656;
+}
+
+/* line 164, ../sass/_layout.scss */
+.aerom-web {
   border: 1px solid #615656;
   background: url('../images/aerom.png?1466737915'), #615656;
 }
 
-/* line 163, ../sass/_layout.scss */
-.web-project-2 {
+/* line 169, ../sass/_layout.scss */
+.digim {
   border: 1px solid #615656;
   background: url('../images/digim.png?1466737915'), #C29B71;
 }
 
-/* line 168, ../sass/_layout.scss */
-.web-project-3 {
+/* line 174, ../sass/_layout.scss */
+.ocean_blue {
   border: 1px solid #615656;
   background: url('../images/ocean_blue.png?1466737915'), #615656;
 }
 
-/* line 173, ../sass/_layout.scss */
-.web-project-4 {
+/* line 179, ../sass/_layout.scss */
+.movie_api {
   border: 1px solid #615656;
   background: url('../images/movie_api.png?1466737915'), #C29B71;
 }
 
-/* line 178, ../sass/_layout.scss */
-.web-project-5 {
+/* line 184, ../sass/_layout.scss */
+.summit {
   border: 1px solid #615656;
   background: url('../images/form.png?1466737915'), #615656;
 }
 
-/* line 183, ../sass/_layout.scss */
-.web-project-6 {
+/* line 189, ../sass/_layout.scss */
+.coffee_lab {
   border: 1px solid #615656;
   background: url('../images/coffee_lab.png?1466737915'), #C29B71;
 }
 
-/* line 192, ../sass/_layout.scss */
-.design-project-1 {
+/* line 198, ../sass/_layout.scss */
+.mirage {
+  border: 1px solid #615656;
+  background: url('../images/mirage.png?1470710565'), #C29B71;
+}
+
+/* line 204, ../sass/_layout.scss */
+.compass {
   border: 1px solid #615656;
   background: url('../images/compass.jpg?1466737915'), #615656;
 }
 
-/* line 197, ../sass/_layout.scss */
-.design-project-2 {
+/* line 209, ../sass/_layout.scss */
+.aerom-markup {
   border: 1px solid #615656;
   background: url('../images/Aerom_Landing_Page.jpg?1467090666'), #C29B71;
 }
 
-/* line 202, ../sass/_layout.scss */
-.design-project-3 {
+/* line 214, ../sass/_layout.scss */
+.evergreen {
   border: 1px solid #615656;
   background: url('../images/evergreen_collective.jpg?1466737915'), #615656;
 }
 
-/* line 207, ../sass/_layout.scss */
-.design-project-4 {
+/* line 219, ../sass/_layout.scss */
+.lemon_twist {
   border: 1px solid #615656;
   background: url('../images/Lemon_Twist.jpg?1466737915'), #C29B71;
 }
@@ -481,50 +493,59 @@ hr {
   }
 }
 
+/* line 134, ../sass/_typography.scss */
+a[href*="http://"],
+a[href*="https://"] {
+  color: #C29B71;
+  font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 700;
+}
 /* line 139, ../sass/_typography.scss */
+a[href*="http://"]:hover,
+a[href*="https://"]:hover {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+/* line 146, ../sass/_typography.scss */
 .social-media {
   margin-top: 24px;
 }
-/* line 141, ../sass/_typography.scss */
+/* line 148, ../sass/_typography.scss */
 .social-media a {
   color: #C29B71;
   font-size: 1.5em;
   margin: 0 8px;
 }
-/* line 147, ../sass/_typography.scss */
+/* line 154, ../sass/_typography.scss */
 .social-media i:hover {
   animation-name: social-hover;
   animation-duration: .84s;
 }
 
-/* line 156, ../sass/_typography.scss */
+/* line 163, ../sass/_typography.scss */
 .fa-twitter:hover {
   color: #00aced;
 }
 
-/* line 161, ../sass/_typography.scss */
+/* line 168, ../sass/_typography.scss */
 .fa-instagram:hover {
   color: #833ab4;
 }
 
-/* line 167, ../sass/_typography.scss */
+/* line 174, ../sass/_typography.scss */
 .fa-github:hover {
   color: #4183c4;
 }
 
-/* line 172, ../sass/_typography.scss */
+/* line 179, ../sass/_typography.scss */
 .fa-behance-square:hover {
   color: #1769ff;
 }
 
-/* line 177, ../sass/_typography.scss */
+/* line 184, ../sass/_typography.scss */
 .project-header {
   margin-bottom: 0;
-}
-
-/* line 184, ../sass/_typography.scss */
-.project-p .project-a:hover {
-  color: #615656;
 }
 
 /* line 6, ../sass/_buttons.scss */
@@ -589,7 +610,7 @@ button[type=submit]:hover {
 /* line 2, ../sass/_extend.scss */
 .white, .main-header h1,
 .main-header a, .main-header li > a,
-.main-footer li > a, .project-p {
+.main-footer li > a {
   color: #fff;
 }
 
@@ -602,24 +623,13 @@ h3, h4, .main-header h1,
 }
 
 /* line 10, ../sass/_extend.scss */
-.background-default, .main-header, .web, .design, .main-footer, .web-project-1, .web-project-2, .web-project-3, .web-project-4, .web-project-5, .web-project-6, .design-project-1, .design-project-2, .design-project-3, .design-project-4 {
+.background-default, .main-header, .web, .design, .main-footer, .dapper, .aerom-web, .digim, .ocean_blue, .movie_api, .summit, .coffee_lab, .mirage, .compass, .aerom-markup, .evergreen, .lemon_twist {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 16, ../sass/_extend.scss */
-.a-text, a[href*="http://"] {
-  color: #1780ba;
-  font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif;
-  font-weight: 700;
-}
-/* line 20, ../sass/_extend.scss */
-.a-text:hover, a[href*="http://"]:hover {
-  color: #C29B71;
-}
-
-/* line 26, ../sass/_extend.scss */
+/* line 17, ../sass/_extend.scss */
 btn-hover:hover, .btn-reveal:hover, .btn-wrap button:hover,
 .btn-wrap a:hover {
   color: #2b2626;

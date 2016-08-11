@@ -13,15 +13,6 @@
   background-size: cover;
 }
 
-.a-text {
-  color: $blue;
-  font-family: $primary-font;
-  font-weight: 700;
-  &:hover {
-    color: $gold;
-  }
-}
-
 btn-hover {
   &:hover {
     color: darken($black, 20%);

@@ -131,8 +131,15 @@ hr {
   }
 }
 
-a[href*="http://"] {
-  @extend .a-text;
+a[href*="http://"],
+a[href*="https://"] {
+  color: $gold;
+  font-family: $primary-font;
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
 }
 
 // .social-media icons
@@ -178,13 +185,5 @@ a[href*="http://"] {
   margin-bottom: 0;
 }
 
-.project-p {
-  @extend .white;
-  .project-a {
-    &:hover {
-      color: $black;
-    } 
-  }
-}
 
 

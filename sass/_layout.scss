@@ -155,32 +155,38 @@ form {
 /////////////////////////////////////////////
 /// web design & development ///
 ////////////////////////////////////////////
-.web-project-1 {
+.dapper {
+  border: 1px solid $black;
+  @include background(image-url("dapper.png"), $black);
+  @extend .background-default;
+}
+
+.aerom-web {
   border: 1px solid $black;
   @include background(image-url("aerom.png"), $black);
   @extend .background-default;
 }
-.web-project-2 {
+.digim {
   border: 1px solid $black;
   @include background(image-url("digim.png"), $gold);
   @extend .background-default;
 }
-.web-project-3 {
+.ocean_blue {
   border: 1px solid $black;
   @include background(image-url("ocean_blue.png"), $black);
   @extend .background-default;
 }
-.web-project-4 {
+.movie_api {
   border: 1px solid $black;
   @include background(image-url("movie_api.png"), $gold);
   @extend .background-default;
 }
-.web-project-5 {
+.summit {
   border: 1px solid $black;
   @include background(image-url("form.png"), $black);
   @extend .background-default;
 }
-.web-project-6 {
+.coffee_lab {
   border: 1px solid $black;
   @include background(image-url("coffee_lab.png"), $gold);
   @extend .background-default;
@@ -189,22 +195,28 @@ form {
 /////////////////////////////////////////////
 /// design ///////////////////////////////
 ////////////////////////////////////////////
-.design-project-1 {
+.mirage {
+  border: 1px solid $black;
+  @include background(image-url("mirage.png"), $gold);
+  @extend .background-default;
+}
+
+.compass {
   border: 1px solid $black;
   @include background(image-url("compass.jpg"), $black);
   @extend .background-default;
 }
-.design-project-2 {
+.aerom-markup {
   border: 1px solid $black;
   @include background(image-url("Aerom_Landing_Page.jpg"), $gold);
   @extend .background-default;
 }
-.design-project-3 {
+.evergreen {
   border: 1px solid $black;
   @include background(image-url("evergreen_collective.jpg"), $black);
   @extend .background-default;
 }
-.design-project-4 {
+.lemon_twist {
   border: 1px solid $black;
   @include background(image-url("Lemon_Twist.jpg"), $gold);
   @extend .background-default;
