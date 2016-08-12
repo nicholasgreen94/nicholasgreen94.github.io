@@ -1,0 +1,43 @@
+
+.menu {
+  li
+  > a {
+    color: $black;
+    font-family: $primary-font;
+    font-size: $primary-font-size;
+    @include padding(5, 10, 5, 10);
+    @extend text-lowercase;
+    &:hover {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-footer {
+  a {
+    color: $black;
+    font-size: $fourth-header;
+    font-weight: 700;
+    &:hover {
+      font-weight: 400;
+    }
+  }
+}
+
+.established {
+  @include padding(84, 0, 0, 0);
+}
+.location-heading {
+  @include padding(64, 0, 0, 0);
+  @media only screen and (min-width: 64em) {
+    @include padding(144, 0, 0, 0);
+  }
+}
+
+h2 {
+  span,
+  address {
+    font-size: $small-font-size;
+    font-weight: 200;
+  }
+}
