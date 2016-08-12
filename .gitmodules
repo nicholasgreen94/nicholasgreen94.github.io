@@ -3,3 +3,6 @@
 	path = digim_marketing
 	url = https://github.com/nicholasgreen94/digim_marketing.git
 
+[submodule "dapper"]
+	path = dapper
+	url = https://github.com/nicholasgreen94/dapper.git
