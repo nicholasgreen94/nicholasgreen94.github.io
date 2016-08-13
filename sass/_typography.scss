@@ -132,7 +132,8 @@ hr {
 }
 
 a[href*="http://"],
-a[href*="https://"] {
+a[href*="https://"],
+a[href*="mailto"] {
   color: $gold;
   font-family: $primary-font;
   font-weight: 700;

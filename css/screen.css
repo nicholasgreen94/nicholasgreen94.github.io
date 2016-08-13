@@ -495,55 +495,57 @@ hr {
 
 /* line 134, ../sass/_typography.scss */
 a[href*="http://"],
-a[href*="https://"] {
+a[href*="https://"],
+a[href*="mailto"] {
   color: #C29B71;
   font-family: "Yantramanav", Helvetica, Verdana, Arial, sans-serif;
   font-weight: 700;
 }
-/* line 139, ../sass/_typography.scss */
+/* line 140, ../sass/_typography.scss */
 a[href*="http://"]:hover,
-a[href*="https://"]:hover {
+a[href*="https://"]:hover,
+a[href*="mailto"]:hover {
   text-decoration: underline;
   text-transform: uppercase;
 }
 
-/* line 146, ../sass/_typography.scss */
+/* line 147, ../sass/_typography.scss */
 .social-media {
   margin-top: 24px;
 }
-/* line 148, ../sass/_typography.scss */
+/* line 149, ../sass/_typography.scss */
 .social-media a {
   color: #C29B71;
   font-size: 1.5em;
   margin: 0 8px;
 }
-/* line 154, ../sass/_typography.scss */
+/* line 155, ../sass/_typography.scss */
 .social-media i:hover {
   animation-name: social-hover;
   animation-duration: .84s;
 }
 
-/* line 163, ../sass/_typography.scss */
+/* line 164, ../sass/_typography.scss */
 .fa-twitter:hover {
   color: #00aced;
 }
 
-/* line 168, ../sass/_typography.scss */
+/* line 169, ../sass/_typography.scss */
 .fa-instagram:hover {
   color: #833ab4;
 }
 
-/* line 174, ../sass/_typography.scss */
+/* line 175, ../sass/_typography.scss */
 .fa-github:hover {
   color: #4183c4;
 }
 
-/* line 179, ../sass/_typography.scss */
+/* line 180, ../sass/_typography.scss */
 .fa-behance-square:hover {
   color: #1769ff;
 }
 
-/* line 184, ../sass/_typography.scss */
+/* line 185, ../sass/_typography.scss */
 .project-header {
   margin-bottom: 0;
 }
