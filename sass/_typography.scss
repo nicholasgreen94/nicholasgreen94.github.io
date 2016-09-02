@@ -58,7 +58,12 @@ li {
 }
 
 hr {
-  border-bottom: 1px solid $gold;
+  border-bottom: 2px solid $gold;
+  margin: $margin * 5 auto;
+}
+
+.hide-letter {
+  display: none;
 }
 
 // .main-header
@@ -75,8 +80,19 @@ hr {
 .menu {
   a {
     &:hover {
-      color: $gold;
+    border-bottom: 2px solid $gold;
+    color: $gold;
+    margin: .75em;
+    padding: 0;
     } 
+  }  
+}
+
+.drop-menu {
+  a {
+  &:hover {
+      border: none;
+    }
   }
 }
 
@@ -110,23 +126,15 @@ hr {
 
 // .about
 .about {
+  h3 {
+    padding: $padding * 32 0 $padding * 6;
+    @media only screen and (min-width: 40em) {
+      padding: $padding * 48 0 $padding * 12;
+    }
+  }
   p {
     &:last-of-type {
       margin-bottom: $margin * 6;
-    }
-  }
-  ul {
-    margin-left: 0;
-    @media only screen and (min-width: 40em) {
-      margin-left: 1.25rem;
-    }
-    li {
-      display: inline;
-      font-size: $base-font-size;
-      font-weight: 500;
-      @media only screen and (min-width: 64em) {
-        font-size: $fourth-heading;
-      }
     }
   }
 }
@@ -186,5 +194,10 @@ a[href*="mailto"] {
   margin-bottom: 0;
 }
 
-
+// import font awesome
+@import url('//use.fontawesome.com/releases/v4.6.3/css/font-awesome-css.min.css');@font-face{font-family:'FontAwesome';src:url('//use.fontawesome.com/releases/v4.6.3/fonts/fontawesome-webfont.eot');src:url('//use.fontawesome.com/releases/v4.6.3/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+url('//use.fontawesome.com/releases/v4.6.3/fonts/fontawesome-webfont.woff2') format('woff2'),
+url('//use.fontawesome.com/releases/v4.6.3/fonts/fontawesome-webfont.woff') format('woff'),
+url('//use.fontawesome.com/releases/v4.6.3/fonts/fontawesome-webfont.ttf') format('truetype'),
+url('//use.fontawesome.com/releases/v4.6.3/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
 

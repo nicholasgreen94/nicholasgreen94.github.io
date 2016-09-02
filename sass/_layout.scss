@@ -1,11 +1,12 @@
 
 // main-header
 .main-header {
-  @include background($secondary-black-overlay, url("https://images.unsplash.com/photo-1414146782248-462e06300dbf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5a9b3a32e4dbe24adb893d775693510d"), $black);
+  @include background($black-overlay, image-url("startup_workspace.jpg"), $black);
   @extend .background-default;
 }
 
 // navigation
+
 .title-bar,
 .top-bar,
 .top-bar ul {
@@ -13,6 +14,7 @@
   .drop-menu {
     background: $black;
     border: none;
+    padding: $padding * 4 0;
     a {
       &:hover {
         color: $gold;
@@ -89,9 +91,24 @@
   }
 }
 
-.subjects {
-  @media only screen and (min-width: 64em) {
-  padding: $padding * 9 0;
+.about {
+  padding-bottom: $padding * 6;
+  @media only screen and (min-width: 40em) {
+    padding-bottom: $padding * 18;
+  }
+}
+
+.about-list {
+  margin-left: 0;
+  padding-bottom: $padding * 4;
+  li {
+    display: block;
+    font-size: $base-font-size;
+    font-weight: 500;
+    padding: $padding * 2 0;
+    @media only screen and (min-width: 64em) {
+      font-size: $fourth-heading;
+    }
   }
 }
 
@@ -111,9 +128,9 @@ form {
 }
 
 .main-footer {
-  @include background($secondary-black-overlay, url("https://images.unsplash.com/photo-1446034295857-c39f8844fad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=231736de0bc92d79a6ee049208b9c283"), $black);
+  @include background($black);
   @extend .background-default;
-  padding-top: $padding * 8;
+  padding-top: $padding * 4;
 }
 
 ///////////////////////////

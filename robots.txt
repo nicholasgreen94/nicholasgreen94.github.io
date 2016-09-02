@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /images
+Allow: /images/my-photo.jpg
