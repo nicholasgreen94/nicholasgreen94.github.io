@@ -8,13 +8,7 @@
 }
 
 .background-default {
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-btn-hover {
-  &:hover {
-    color: darken($black, 20%);
-  }
 }

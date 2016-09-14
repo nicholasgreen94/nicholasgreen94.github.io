@@ -16,11 +16,12 @@ h2,
 h3 {
   @extend .text-uppercase;
   font-family: $primary-font;
+  font-weight: 300;
+  letter-spacing: 4px;
 }
 
 h2 {
   font-size: $third-heading;
-  font-weight: 700;
   margin: 0;
   @media only screen and (min-width: 40em) {
     font-size: $secondary-heading;
@@ -29,7 +30,6 @@ h2 {
 
 h3 {
   font-size: $fourth-heading;
-  font-weight: 700;
   padding-top: $padding * 12;
   @media only screen and (min-width: 40em) {
     font-size: $third-heading;
@@ -45,9 +45,10 @@ h4 {
 }
 
 p {
-  line-height: 1.8;
   font-family: $secondary-font;
   font-size: $small-font-size;
+  letter-spacing: 1px;
+  line-height: 1.8;
   @media only screen and (min-width: 40em) {
     font-size: $base-font-size;
   }
@@ -60,6 +61,11 @@ li {
 hr {
   border-bottom: 2px solid $gold;
   margin: $margin * 5 auto;
+}
+
+.close-icon {
+  font-size: $fourth-heading;
+  font-weight: 300;
 }
 
 .hide-letter {
@@ -88,14 +94,6 @@ hr {
   }  
 }
 
-.drop-menu {
-  a {
-  &:hover {
-      border: none;
-    }
-  }
-}
-
 .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
   border-color: $white transparent transparent;
   right: 10px;
@@ -112,10 +110,16 @@ hr {
   }
 }
 
+.subheader {
+  color: $gold;
+  font-weight: 500;
+}
+
 .work-header,
 .about-header,
 .contact-header,
-.web-header {
+.web-header,
+.design-header {
   span {
     font-size: $base-font-size;
     @media only screen and (min-width: 64em) {
@@ -126,15 +130,32 @@ hr {
 
 // .about
 .about {
-  h3 {
-    padding: $padding * 32 0 $padding * 6;
-    @media only screen and (min-width: 40em) {
-      padding: $padding * 48 0 $padding * 12;
-    }
-  }
   p {
+    @media only screen and (min-width: 40em) {
+        padding: $padding * 0;
+      }
+      &:nth-of-type(1n+2) {
+        padding-top: $padding * 10;
+      }
     &:last-of-type {
       margin-bottom: $margin * 6;
+    }
+  }
+  .subjects {
+    h2 {
+      padding: $padding * 12 0;
+    }
+    .about-list {
+      li {
+        display: block;
+        font-size: $base-font-size;
+        font-weight: 300;
+        letter-spacing: 2px;
+        padding: $padding * 2 0;
+        @media only screen and (min-width: 64em) {
+          font-size: $fourth-heading;
+        }
+      }
     }
   }
 }
@@ -165,6 +186,10 @@ a[href*="mailto"] {
       animation-duration: .84s;
     }
   }
+}
+
+.project-p {
+  letter-spacing: 2px;
 }
 
 // .social-media hovers 

@@ -16,8 +16,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Yantramanav:400,100,300,500,700%7CMate' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/screen.css">
+  <link href='https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700%7CMate' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/min.screen.css">
 </head>
   <body>
     <!-- .main-header -->
@@ -25,59 +25,59 @@
       <!-- repsonsive-navigation -->
       <div class="title-bar" data-responsive-toggle="navigation" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle></button>
+        <button class="close-icon" type="button" data-toggle>X</button>
       </div>
       <!-- repsonsive-navigation -->
       <div class="top-bar" id="navigation">
-        <div class="top-bar-right">
-          <div class="menu-centered">
-            <ul class="menu horizontal dropdown menu" data-dropdown-menu>
-              <li><a href="index.html#top" class="navlink">Home</a></li>
-              <li class="work-link"><a href="#work" class="navlink">Work</a>
-                <ul class="menu drop-menu design-box">
-                  <li><a href="web-work.html">Web Design &amp; Development</a></li>
-                  <li><a href="design-work.html">Design</a></li>
-                </ul>
-              </li>
-              <li><a href="#about" class="navlink">About</a></li>
-              <li><a href="#contact" class="navlink">Contact</a></li>
-            </ul>
-          </div>
+        <div class="menu-centered">
+          <ul class="menu horizontal dropdown" data-dropdown-menu>
+            <li><a href="index.html#top">Home</a></li>
+            <li><a href="web-work.html">Web</a></li>
+            <li><a href="design-work.html">Design</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
       <div class="hero">
-        <h1 class="text-center"><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"><span class="hide-letter">N</span>icholas Gree<span class="hide-letter">n</span><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"></h1>
+        <h1 class="text-center"><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"><span class="hide-letter">N</span>icholas Green</h1>
       </div>
     </header>
     <!-- .main-header -->
     <!-- .work -->
     <section class="work" id="work">
-      <div class="row expanded">
-        <div class="work-header text-center">
+      <div class="row">
+        <div class="work-header text-left small-12">
           <h2>Work</h2>
           <span class="subheader">A collection of my portfolios for web design/development and design</span>
         </div>
+      </div>
         <!--  .web -->
-        <article class="web work-section small-12 large-6 columns text-center">
-          <a href="web-work.html">Web Design and Development</a>
-        </article>
-        <!-- .web -->
-        <!-- .design -->
-        <article class="design work-section small-12 large-6 columns text-center">
-          <a href="design-work.html">Design</a>
-        </article>
-        <!-- .design -->
-        <!--.photography -->
-      </div><!-- .row -->
-    </section>
+        <div class="row">
+          <div class="small-12 large-offset-0 large-7 columns">
+            <article class="web work-section text-center">
+              <a href="web-work.html">Web Design and Development</a>
+            </article>
+          </div>
+          <!-- .web -->
+          <!-- .design -->
+        <div class="small-12 large-offset-0 large-5 columns">
+          <article class="design work-section text-center">
+            <a href="design-work.html">Design</a>
+          </article>
+        </div>
+          <!-- .design -->
+        </div><!-- .row -->
+      </section>
     <!-- .work -->
     <!-- .about -->
     <section class="about" id="about">
       <div class="row">
-        <div class="about-header text-center">
+        <div class="about-header text-left small-12">
           <h2>About</h2>
           <span class="subheader">A little information about myself</span>
         </div>
-        <div class="small-offset-1 small-10 large-offset-0 large-7 columns">
+        <div class="small-offset-0 small-12 large-offset-0 large-7 columns">
           <p class="text-left">
             My name is Nicholas Green. I am a self-taught web designer/developer that is currently living in Phoenix, Arizona. 
             Originally from Salt Lake City, Utah. However, at the age of 21, I sought out new scenery, adventure, and climate, 
@@ -90,44 +90,50 @@
             and started creating side projects as a way for me to express my creativity. 
           </p>
           <p class="text-left">
-            When not working or learning, I enjoy reading books, writing, drink coffee at new coffee shops, take pictures, 
-            learn to speak Spanish, explore the nature of Arizona and spending quality time with my wife, Valerie. 
-            I am inspired by nature, music(specifically folk, jazz, and indie), design, photography, books, 
-            space, and technology.
-            <br>
-            I also take the pictures for my wife's blog <a href="http://sixthsensestyle.com/" target="_blank">Sixth Sense Style</a>, 
-            which was edited is managed by me.
+              When not working or learning, I enjoy reading books, writing, drink coffee at new coffee shops, take pictures, 
+              learn to speak Spanish, explore the nature of Arizona and spending quality time with my wife, Valerie. 
+              I am inspired by nature, music(specifically folk, jazz, and indie), design, photography, books, 
+              space, and technology.
+            </p>
+            <p class="text-left">
+              I also take the pictures for my wife's blog <a href="http://sixthsensestyle.com/" target="_blank">Sixth Sense Style</a>, 
+              which was edited is managed by me.
           </p>
         </div>
-        <div class="small-offset-1 small-10 large-offset-0 large-5 columns">
-          <img src="images/my_photo.jpg" alt="an image of myself">
+        <div class="small-12 large-offset-0 large-5 columns end">
+          <img class="my-image" src="images/me_laptop_side.jpg" alt="an image of myself">
         </div>
-        <div class="small-offset-1 small-10 large-offset-3 large-6 columns end">
-          <h3 class="text-center">Experience</h3>
-        </div>
+      </div><!-- end .row -->
+      <div class="row subjects-space">
+        <div class="subjects columns">
+          <h2 class="text-center">Experience</h2>
         <ul class="about-list text-center small-offset-0 small-12 medium-offset-0 medium-4 columns">
-          <li>Semanatic HTML</li>
+          <li>HTML</li>
           <li>CSS</li>
-          <li>Resposive Web Design</li>
           <li>SASS</li>
           <li>Compass</li>
+          <li>Responsive Web Design</li>
+          <li>Search Engine Optimization</li>
         </ul>
           <hr class="small-6 hide-for-medium hide-for-large">
         <ul class="about-list text-center small-offset-0 small-12  medium-offset-0 medium-4 columns">
-          <li>Bootstrap (3 &amp; 4)</li>
-          <li>ZURB Foundations</li>
+          <li>User Interface</li>
+          <li>User Experience</li>
           <li>Materialize CSS</li>
-          <li>User Experience (UX)</li>
-          <li>User Interface (UI)</li>
+          <li>ZURB Foundations</li>          
+          <li>Bootstrap (3 &amp; 4)</li>
+          <li>Editing Wordpress Templates</li>
         </ul>
           <hr class="small-6 hide-for-medium hide-for-large">
         <ul class="about-list text-center small-offset-0 small-12 medium-offset-0 medium-4 columns">
           <li>JavaScript</li>
           <li>jQuery</li>
           <li>AJAX</li>
-          <li>Adobe Photoshop</li>
           <li>Github</li>
+          <li>Basic PHP</li>
+          <li>Adobe Photoshop</li>
         </ul>
+      </div>
       </div><!-- .row -->
     </section>
     <!-- .about -->
@@ -135,17 +141,17 @@
     <section class="contact" id="contact">
       <div class="row">
       <form action="https://formspree.io/nicholasgreencreations@gmail.com" method="POST">
-        <div class="contact-header text-center">
+        <div class="contact-header text-left small-12">
           <h2>Contact</h2>
           <span class="subheader">Leave me a message and I will get in contact with you</span>
         </div>
-        <div class="small-offset-1 small-10 large-offset-1 large-5 columns">
+        <div class="small-12 large-6 columns">
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="email" placeholder="Email Address">
           <textarea placeholder="Comments" name="comment"></textarea>
           <button class="small-12 button" type="submit">Send Message</button>
         </div>
-        <article class="small-10 small-offset-1 large-offset-0 large-5 columns end">
+        <article class="small-12 large-6 columns end">
           <p>
             Thank you for visiting my website! if you would like to reach out to me, please fill out the form to 
             the left. Please include your name, email, and a little about your project needs. I will respond to 
@@ -166,15 +172,14 @@
     <!-- .main-footer -->
     <footer class="main-footer">
       <div class="top-bar">
-        <div class="top-bar-right">
-          <div class="menu-centered">
-            <ul class="menu horizontal">
-              <li><a href="#top" class="navlink">Home</a></li>
-              <li><a href="#work" class="navlink">Work</a></li>
-              <li><a href="#about" class="navlink">About</a></li>
-              <li><a href="#contact" class="navlink">Contact</a></li>
-            </ul>
-          </div>
+        <div class="menu-centered">
+          <ul class="menu horizontal">
+            <li><a href="#top">Home</a></li>
+              <li><a href="web-work.html">Web</a></li>
+              <li><a href="design-work.html">Design</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
     </footer>

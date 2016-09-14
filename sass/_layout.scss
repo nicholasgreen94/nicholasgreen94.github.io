@@ -1,7 +1,7 @@
 
 // main-header
 .main-header {
-  @include background($black-overlay, image-url("startup_workspace.jpg"), $black);
+  @include background($secondary-black-overlay, url("https://hd.unsplash.com/photo-1431290909782-1d60c011627b"));
   @extend .background-default;
 }
 
@@ -11,14 +11,10 @@
 .top-bar,
 .top-bar ul {
   background: transparent;
-  .drop-menu {
-    background: $black;
-    border: none;
-    padding: $padding * 4 0;
-    a {
-      &:hover {
-        color: $gold;
-      }
+  .menu-centered {
+      margin-top: $margin * -21;
+      @media only screen and (min-width: 40em) {
+        margin-top: 0;
     }
   }
 }
@@ -39,9 +35,6 @@
     @media only screen and (min-width: 40em) {
       padding: $padding * 84 0;
     }
-    @media only screen and (min-width: 64em) {
-      padding: $padding * 108 0; 
-    }
     a {
       padding: $padding * 2.5 $padding *5;
     }
@@ -52,21 +45,25 @@
 .work-header,
 .about-header,
 .contact-header {
-  padding: $padding * 12 0 $padding * 18;
+  padding: $padding * 24 .625rem $padding * 12;
   @media only screen and (min-width: 40em) {
-    padding: $padding * 24 0 $padding * 48;
+    padding: $padding * 48 .9375rem $padding * 12;
   }
 }
 
 // section headers
 .web-header,
 .design-header {
-  padding: $padding * 24 0 $padding * 48;
+  margin: 0 auto;
+  padding: $padding * 48 .625rem $padding * 12;
+  @media only screen and (min-width: 40em) {
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+  }
 }
 
 .web,
-.design,
-.photography {
+.design{
   a {
     border: 2px solid $white;
     color: $white;
@@ -91,25 +88,26 @@
   }
 }
 
-.about {
-  padding-bottom: $padding * 6;
+.subjects-space {
+  padding: 0 .625rem;
   @media only screen and (min-width: 40em) {
-    padding-bottom: $padding * 18;
+    padding: 0 .9375rem;
+  }
+.subjects {
+  @include background($black-gold-overlay, image-url("startup_workspace.jpg"));
+  @extend .background-default;
+  color: $white;
+  margin-top: $margin * 36;
+  padding: $padding * 12 0;
+  @media only screen and (min-width: 40em) {
+    padding: $padding * 24 0;
+    }
   }
 }
 
 .about-list {
   margin-left: 0;
   padding-bottom: $padding * 4;
-  li {
-    display: block;
-    font-size: $base-font-size;
-    font-weight: 500;
-    padding: $padding * 2 0;
-    @media only screen and (min-width: 64em) {
-      font-size: $fourth-heading;
-    }
-  }
 }
 
 .contact {
@@ -131,14 +129,21 @@ form {
   @include background($black);
   @extend .background-default;
   padding-top: $padding * 4;
+  .menu-centered {
+    margin-top: 0;
+  }
 }
 
 ///////////////////////////
 /// project pages ///
 //////////////////////////
 
+.first-project-wrap {
+  margin: $margin * 3 auto;
+}
+
 .project-description {
-  background: $black;
+  background: transparentize($black, 0.2);
   color: $white;
   padding: $padding * 12;
   li {
@@ -147,15 +152,16 @@ form {
 }
 
 .project-initial {
+  border-bottom: 5px solid $gold;
   margin-bottom: $margin * 12;
-  padding: $padding * 62 0;
+  padding: $padding * 124 0 0;
   @include transition(2s);
   @media only screen and (min-width: 40em) {
-    padding: $padding * 72 0;
+    padding: $padding * 144 0 0;
   }
   @media only screen and (min-width: 64em) {
-    margin-bottom: $margin * 14;
-    padding: $padding * 78 0;
+    margin-bottom: $margin * 12;
+    padding: $padding * 156 0 0;
   }
 }
 
@@ -173,39 +179,32 @@ form {
 /// web design & development ///
 ////////////////////////////////////////////
 .dapper {
-  border: 1px solid $black;
-  @include background(image-url("dapper.png"), $black);
+  @include background($secondary-black-gold-overlay, image-url("dapper.png"), $black);
   @extend .background-default;
 }
 
 .aerom-web {
-  border: 1px solid $black;
-  @include background(image-url("aerom.png"), $black);
+  @include background($secondary-black-gold-overlay, image-url("aerom.png"), $black);
   @extend .background-default;
 }
 .digim {
-  border: 1px solid $black;
-  @include background(image-url("digim.png"), $gold);
+  @include background($secondary-black-gold-overlay, image-url("digim.png"), $gold);
   @extend .background-default;
 }
 .ocean_blue {
-  border: 1px solid $black;
-  @include background(image-url("ocean_blue.png"), $black);
+  @include background($secondary-black-gold-overlay, image-url("ocean_blue.png"), $black);
   @extend .background-default;
 }
 .movie_api {
-  border: 1px solid $black;
-  @include background(image-url("movie_api.png"), $gold);
+  @include background($secondary-black-gold-overlay, image-url("movie_api.png"), $gold);
   @extend .background-default;
 }
 .summit {
-  border: 1px solid $black;
-  @include background(image-url("form.png"), $black);
+  @include background($secondary-black-gold-overlay, image-url("form.png"), $black);
   @extend .background-default;
 }
 .coffee_lab {
-  border: 1px solid $black;
-  @include background(image-url("coffee_lab.png"), $gold);
+  @include background($secondary-black-gold-overlay, image-url("coffee_lab.png"), $gold);
   @extend .background-default;
 }
 
@@ -213,28 +212,23 @@ form {
 /// design ///////////////////////////////
 ////////////////////////////////////////////
 .mirage {
-  border: 1px solid $black;
-  @include background(image-url("mirage.png"), $gold);
+  @include background($secondary-black-gold-overlay, image-url("mirage.png"), $gold);
   @extend .background-default;
 }
 
 .compass {
-  border: 1px solid $black;
-  @include background(image-url("compass.jpg"), $black);
+  @include background($secondary-black-gold-overlay, image-url("compass.jpg"), $black);
   @extend .background-default;
 }
 .aerom-markup {
-  border: 1px solid $black;
-  @include background(image-url("Aerom_Landing_Page.jpg"), $gold);
+  @include background($secondary-black-gold-overlay, image-url("Aerom_Landing_Page.jpg"), $gold);
   @extend .background-default;
 }
 .evergreen {
-  border: 1px solid $black;
-  @include background(image-url("evergreen_collective.jpg"), $black);
+  @include background($secondary-black-gold-overlay, image-url("evergreen_collective.jpg"), $black);
   @extend .background-default;
 }
 .lemon_twist {
-  border: 1px solid $black;
-  @include background(image-url("Lemon_Twist.jpg"), $gold);
+  @include background($secondary-black-gold-overlay, image-url("Lemon_Twist.jpg"), $gold);
   @extend .background-default;
 }

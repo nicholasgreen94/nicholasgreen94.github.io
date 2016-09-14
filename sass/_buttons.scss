@@ -4,12 +4,11 @@ button {
 }
 
 .btn-reveal {
-  color: $black;
+  color: $white;
+  font-size: $fourth-heading;
   font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: $margin * 12;
-  padding: $padding * 2;
-  @extend btn-hover;
+  letter-spacing: 1px;
+  padding: 0 $padding * 2;
 }
 
 .btn-wrap {
@@ -20,12 +19,11 @@ button {
   }
   button,
   a {
-    color: $black;
+    color: $white;
     display: inline-block;
     font-weight: 700;
     letter-spacing: 2px;
     margin: 0 $margin * 8;
-    @extend btn-hover;
   }
 }
 

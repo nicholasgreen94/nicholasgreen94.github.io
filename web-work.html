@@ -18,7 +18,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
   <link href='https://fonts.googleapis.com/css?family=Yantramanav:400,100,300,500,700%7CMate' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/screen.css">
+  <link rel="stylesheet" href="css/min.screen.css">
 </head>
   <body>
     <!-- .main-header -->
@@ -26,44 +26,41 @@
       <!-- repsonsive-navigation -->
       <div class="title-bar" data-responsive-toggle="navigation" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle></button>
+        <button class="close-icon" type="button" data-toggle>X</button>
       </div>
       <!-- repsonsive-navigation -->
       <div class="top-bar" id="navigation">
-        <div class="top-bar-right">
-          <div class="menu-centered">
-            <ul class="menu horizontal dropdown menu" data-dropdown-menu>
-              <li><a href="index.html#top">Home</a></li>
-              <li class="work-link"><a href="index.html#work">Work</a>
-                <ul class="menu drop-menu">
-                  <li><a href="#">Web Design &amp; Development</a></li>
-                  <li><a href="design-work.html">Design</a></li>
-                </ul>
-              </li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+        <div class="menu-centered">
+          <ul class="menu horizontal dropdown" data-dropdown-menu>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Web</a></li>
+            <li><a href="design-work.html">Design</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
       <div class="hero">
-        <h1 class="text-center"><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"><span class="hide-letter">N</span>icholas Gree<span class="hide-letter">n</span><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"></h1>
+        <h1 class="text-center"><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"><span class="hide-letter">N</span>icholas Green</h1>
       </div>
     </header>
     <!-- .main-header -->
     <!-- .web-header -->
-    <div class="web-header text-center">
-      <h2>Web Design and Development</h2>
-      <span class="subheader">My personal projects for web design/development</span>
+    <div class="row">
+      <div class="web-header text-left small-12">
+        <h2>Web Design and Development</h2>
+        <span class="subheader">My personal projects for web design/development</span>
+      </div>
     </div>
     <!-- .web-header -->    
     <!-- .web-portfolio -->
-    <div class="row expanded">
+    <div class="row first-project-wrap">
       <!-- .dapper -->
-      <section class="small-12 large-offset-1 large-5 columns">
-        <h3 class="project-header text-center">Dapper</h3>
+      <section class="small-12 large-7 columns">
         <article class="dapper project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Dapper</h3>
+            <p class="project-p medium-offset-2 medium-8">
               My latest project, this site is inspired by my passion for men’s clothing and fashion. 
               It is my first site that I have used Compass and Google Maps since learning them. 
               I created the logos using Inkscape and saved them as SVG’s for better scalability. 
@@ -79,7 +76,7 @@
               I started the project by completing sketches and thinking about what I would like the site to 
               look like. It uses the font Josefin Sans. 
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>HTML, </li>
@@ -91,22 +88,24 @@
               <li>jQuery, </li>
               <li>Google Maps</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="websites/dapper/index.html" target="_blank">Go To Site</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="websites/dapper/index.html" target="_blank">Go To Site</a>
-        </div>
       </section>
       <!-- .dapper -->
       
       <!-- .aerom -->
-      <section class="small-12 large-offset-0 large-5 columns end">
-        <h3 class="project-header text-center">Aerom</h3>
+      <section class="small-12 large-5 columns end">
         <article class="aerom-web project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Aerom</h3>
+            <p class="project-p medium-offset-2 medium-8">
               This site is a mock website that I created due to my interest in journals and writing. 
               The backgrounds for the header section and footer section challenged me to think 
               outside the box and find a way to create the slanted effect, which I achieved using borders. 
@@ -117,7 +116,7 @@
               downloaded from the internet would be the best fit matched with Fira Sans. 
               The photos used are not mine and were found on <a href=“https://unsplash.com/”>Unsplash</a>.
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>HTML, </li>
@@ -125,24 +124,26 @@
               <li>SASS, </li>
               <li>ZURB Foundation</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="websites/aerom/index.html" target="_blank">Go To Site</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="websites/aerom/index.html" target="_blank">Go To Site</a>
-        </div>
       </section>
       <!-- .aerom -->
     </div><!-- end .row -->
     
-    <div class="row expanded"><!-- begin .row -->
+    <div class="row"><!-- begin .row -->
       <!-- .digim -->
-      <section class="small-12 large-offset-1 large-5 columns">
-        <h3 class="project-header text-center">Digim Marketing</h3>
+      <section class="small-12 large-5 columns">
         <article class="digim project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+          <h3 class="project-header text-center">Digim Marketing</h3>
+            <p class="project-p medium-offset-2 medium-8">
               A marketing website that I created when first learning Bootstrap and jQuery. 
               It uses the background-attachment: fixed CSS property and value to create a parallax 
               effect. As with all my projects, I start out with a vision and communicate that in a sketchbook. 
@@ -154,71 +155,75 @@
               with it. It uses a lot of Bootstraps glyph icons and photos from Unsplash, while also using 
               only one font throughout the whole site, the google font “Mallanna”. 
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>HTML, </li>
               <li>CSS, </li>
               <li>SASS, </li>
               <li>jQuery, </li>
-              <li>Bootstrap</li>
+              <li>Twitter Bootstrap</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="digim_marketing/index.html" target="_blank">Go To Site</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="digim_marketing/index.html" target="_blank">Go To Site</a>
-        </div>
       </section>
       <!-- .digim -->
       
       <!-- .ocean_blue -->
-      <section class="small-12 large-offset-0 large-5 columns end">
-        <h3 class="project-header text-center">Ocean Blue</h3>
+      <section class="small-12 large-7 columns end">
         <article class="ocean_blue project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Ocean Blue</h3>
+            <p class="project-p medium-offset-2 medium-8">
               This website was a challenge to myself, to create a full website in one day. 
               I completed the challenge and this is the result. I completed the project using 
               Bootstrap 4 and simple Google fonts(Abel and Amiri). I first drew sketches of what 
               I would like the site to look like and thought about the colors. The colors I decided 
               would be a navy blue mixed with a smooth coral color to add a lot of contrast. 
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>HTML, </li>
               <li>CSS, </li>
               <li>SASS, </li>
               <li>jQuery, </li>
-              <li>Bootstrap 4</li>
+              <li>Twitter Bootstrap 4</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="websites/ocean_blue/index.html" target="_blank">Go To Site</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="websites/ocean_blue/index.html" target="_blank">Go To Site</a>
-        </div>
       </section>
       <!-- .ocean_blue -->
     </div><!-- end .row -->
     
-    <div class="row expanded">
+    <div class="row">
       <!-- .summit -->
-      <section class="small-12 large-offset-1 large-5 columns">
-        <h3 class="project-header text-center">Summit Form</h3>
+      <section class="small-12 large-7 columns">
         <article class="summit project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Summit Form</h3>
+            <p class="project-p medium-offset-2 medium-8">
               This is a form that I created that will respond when you click on the submit button. 
               I created it after learning about jQuery’s AJAX functions. It doesn’t have any server-side 
               language but is an interface for a login with an option to sign in. It has a success and fail 
               that lets the user know whether submitting the form was a failure or successful. Currently the 
               form is not mobile ready and is only meant for desktop viewing. 
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>HTML, </li>
@@ -227,75 +232,82 @@
               <li>jQuery, </li>
               <li>AJAX</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="websites/summit_form/index.html" target="_blank">Go To Site</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="websites/summit_form/index.html" target="_blank">Go To Site</a>
-        </div>
       </section>
     <!-- .summit -->
     <!-- .movie_api -->
-    <section class="small-12 large-offset-0 large-5 columns end">
-      <h3 class="project-header text-center">Movie API</h3>
+    <section class="small-12  large-5 columns end">
       <article class="movie_api project-initial">
-        <div class="project-description large-4">
-        <p class="project-p">
-          The Movie API project is a website that I created where you can enter the name of a movie and it 
-          will get the movie information from the website <a class="project-a" href='http://www.omdbapi.com/'>OMDb API</a> 
-          and display information about the movie such as the year the movie was released, rating, runtime, 
-          actors, plot and more. It uses AJAX to access the site where all the information is stored to 
-          display the information.
-        </p>
-        <hr>
-        <h4 class="text-center">Made with:</h4>
-        <ul class="text-center">
-          <li>HTML, </li>
-          <li>CSS, </li>
-          <li>SASS, </li>
-          <li>jQuery, </li>
-          <li>AJAX</li>
-        </ul>
-      </div>
+        <div class="project-description large-112">
+          <h3 class="project-header text-center">Movie API</h3>
+          <p class="project-p medium-offset-2 medium-8">
+            The Movie API project is a website that I created where you can enter the name of a movie and it 
+            will get the movie information from the website <a class="project-a" href='http://www.omdbapi.com/'>OMDb API</a> 
+            and display information about the movie such as the year the movie was released, rating, runtime, 
+            actors, plot and more. It uses AJAX to access the site where all the information is stored to 
+            display the information.
+          </p>
+          <hr class="medium-6">
+          <h4 class="text-center">Made with:</h4>
+          <ul class="text-center">
+            <li>HTML, </li>
+            <li>CSS, </li>
+            <li>SASS, </li>
+            <li>jQuery, </li>
+            <li>AJAX</li>
+          </ul>
+          <div class="btn-wrap text-center">
+            <button class="btn-minimize float-center">Minimize</button>
+            <a class="float-center" href="websites/movie_api/index.html" target="_blank">Go To Site</a>
+          </div>
+        </div>
+        <div class="clearfix">
+          <button class="btn-reveal float-right">View</button>
+        </div>
       </article>
-      <button class="btn-reveal float-center">See Project</button>
-      <div class="btn-wrap text-center">
-        <button class="btn-minimize float-center">Minimize</button>
-        <a class="float-center" href="websites/movie_api/index.html" target="_blank">Go To Site</a>
-      </div>
     </section>
     <!-- .movie_api -->
   </div><!-- end .row -->
   
-  <div class="row expanded">
+  <div class="row">
     <!-- .coffee_lab -->
-    <section class="small-12 large-offset-1 large-5 columns">
-      <h3 class="project-header text-center">Coffee Lab</h3>
+    <section class="small-12 large-5 columns">
       <article class="coffee_lab project-initial">
-        <div class="project-description large-4">
-          <p class="project-p">
+        <div class="project-description large-12">
+          <h3 class="project-header text-center">Coffee Lab</h3>
+          <p class="project-p medium-offset-2 medium-8">
             This was the first website that I created, it was built with Bootstrap and uses Adobe Typeset 
             for one of the fonts. It’s fictitious site but did give me an insight into the amount of 
             work and design that goes into creating a website. I sketched out the website and 
             built around the wireframes I made. After learning jQuery, I came back and worked on 
             adding that to the project. The site is simple but gave me the confidence to create different sites. 
           </p>  
-          <hr>
+          <hr class="medium-6">
           <h4 class="text-center">Made with:</h4>
           <ul class="text-center">
             <li>HTML, </li>
             <li>CSS, </li>
             <li>SASS, </li>
             <li>jQuery</li>
+            <li>Twitter Bootstrap</li>
           </ul>
+          <div class="btn-wrap text-center">
+            <button class="btn-minimize float-center">Minimize</button>
+            <a class="float-center" href="websites/coffee_lab/index.html" target="_blank">Go To Site</a>
+          </div>
+        </div>
+        <div class="clearfix">
+          <button class="btn-reveal float-right">View</button>
         </div>
       </article>
-      <button class="btn-reveal float-center">See Project</button>
-      <div class="btn-wrap text-center">
-        <button class="btn-minimize float-center">Minimize</button>
-        <a class="float-center" href="websites/coffee_lab/index.html" target="_blank">Go To Site</a>
-      </div>
     </section>
     <!-- .coffee_lab -->
   </div><!-- end .row -->
@@ -305,17 +317,17 @@
     <section class="contact" id="contact">
       <div class="row">
       <form action="https://formspree.io/nicholasgreencreations@gmail.com" method="POST">
-        <div class="contact-header text-center">
+        <div class="contact-header text-left small-12">
           <h2>Contact</h2>
           <span class="subheader">Leave me a message and I will get in contact with you</span>
         </div>
-        <div class="small-offset-1 small-10 large-offset-1 large-5 columns">
+        <div class="small-12 large-6 columns">
           <input type="text" name="name"placeholder="Name">
           <input type="email" name="email" placeholder="Email Address">
           <textarea placeholder="Comments" name="comment"></textarea>
           <button class="small-12 button" type="submit">Send Message</button>
         </div>
-        <article class="small-10 small-offset-1 large-offset-0 large-5 columns end">
+        <article class="small-12 large-6 columns end">
           <p>
             Thank you for visiting my website! if you would like to reach out to me, please fill out the form to 
             the left. Please include your name, email, and a little about your project needs. I will respond to 
@@ -336,15 +348,14 @@
     <!-- .main-footer -->
     <footer class="main-footer">
       <div class="top-bar">
-        <div class="top-bar-right">
-          <div class="menu-centered">
-            <ul class="menu horizontal">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#top">Top</a></li>
-              <li><a href="index.html#work">Work</a></li>
-              <li><a href="index.html#about">About</a></li>
-            </ul>
-          </div>
+        <div class="menu-centered">
+          <ul class="menu horizontal" data-dropdown-menu>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Web</a></li>
+            <li><a href="design-work.html">Design</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
     </footer>

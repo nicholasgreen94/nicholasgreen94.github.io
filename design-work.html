@@ -18,7 +18,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
   <link href='https://fonts.googleapis.com/css?family=Yantramanav:400,100,300,500,700%7CMate' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/screen.css">
+  <link rel="stylesheet" href="css/min.screen.css">
 </head>
   <body>
     <!-- .main-header -->
@@ -26,166 +26,173 @@
       <!-- repsonsive-navigation -->
       <div class="title-bar" data-responsive-toggle="navigation" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle></button>
+        <button class="close-icon" type="button" data-toggle>X</button>
       </div>
       <!-- repsonsive-navigation -->
       <div class="top-bar" id="navigation">
-        <div class="top-bar-right">
-          <div class="menu-centered">
-            <ul class="menu horizontal dropdown menu" data-dropdown-menu>
-              <li><a href="index.html#top">Home</a></li>
-              <li class="work-link"><a href="index.html#work">Work</a>
-                <ul class="menu drop-menu">
-                  <li><a href="web-work.html">Web Design &amp; Development</a></li>
-                  <li><a href="#">Design</a></li>
-                </ul>
-              </li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+        <div class="menu-centered">
+          <ul class="menu horizontal dropdown" data-dropdown-menu>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web-work.html">Web</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
       <div class="hero">
-        <h1 class="text-center"><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"><span class="hide-letter">N</span>icholas Gree<span class="hide-letter">n</span><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"></h1>
+        <h1 class="text-center"><img class="light-logo" src="images/light_logo.svg" alt="Nicholas Green Creations Logo"><span class="hide-letter">N</span>icholas Green</h1>
       </div>
     </header>
     <!-- .main-header -->
     <!-- .design-header -->
-    <div class="web-header text-center">
-      <h2>Design</h2>
-      <span class="subheader">A list of my own personal projects for design</span>
+    <div class="row">
+      <div class="design-header text-left small-12">
+        <h2>Design</h2>
+        <span class="subheader">A list of my own personal projects for design</span>
+      </div>
     </div>
     <!-- .design-header -->
     <!-- .design-portfolio -->
-    <div class="row expanded">
+    <div class="row first-project-wrap">
       <!-- .design-project-1 -->
-      <section class="small-12 large-offset-1 large-5 columns">
-        <h3 class="project-header text-center">Mirage</h3>
+      <section class="small-12 large-offset-0 large-7 columns">
         <article class="mirage project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Mirage</h3>
+            <p class="project-p medium-offset-2 medium-8">
               I’ve always been inspired typography on photographs. 
               The photo used is from Unsplash and the font is Butler. Now, 
               in order to get this effect, I duplicated the background layer, which 
               contained the photo. I did this to avoid making any destructible edits, then 
               added a layer mask and exposed the letters carefully.
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>Adobe Photoshop</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="images/mirage.png" target="_blank">Look</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="images/mirage.png" target="_blank">See Work</a>
-        </div>
       </section>
       <!-- .design-project-1 -->
       <!-- .design-project-2 -->
       <section class="small-12 large-offset-0 large-5 columns end">
-        <h3 class="project-header text-center">Modern Compass</h3>
         <article class="compass project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Modern Compass</h3>
+            <p class="project-p medium-offset-2 medium-8">
               I created this compass when first learning photoshop. I got an understanding off how layers 
               work and affect the document. At first, I completed this in my notebook, then decided that I 
               needed to try and make this in photoshop. Once finishing the drawing I went straight to work 
               on my computer and completed it.
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>Adobe Photoshop</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="images/compass.jpg" target="_blank">Look</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="images/compass.jpg" target="_blank">See Work</a>
-        </div>
       </section>
       <!-- .design-project-2 -->
     </div><!-- end .row -->
-    <div class="row expanded">
+    <div class="row">
       <!-- .design-project-3 -->
-      <section class="small-12 large-offset-1 large-5 columns">
-        <h3 class="project-header text-center">Aerom Mockup</h3>
+      <section class="small-12 large-offset-0 large-5 columns">
         <article class="aerom-markup project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Aerom Mockup</h3>
+            <p class="project-p medium-offset-2 medium-8">
               My first attempt at creating an actual mockup of a website in Photoshop. The website it is 
               for is Aerom which is displayed on my web design and development page. 
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>Adobe Photoshop</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="images/Aerom_Landing_Page.jpg" target="_blank">Look</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="images/Aerom_Landing_Page.jpg" target="_blank">See Work</a>
-        </div>
       </section>
       <!-- .design-project-3 -->
       <!-- .design-project-4 -->
-      <section class="small-12 large-offset-0 large-5 columns end">
-        <h3 class="project-header text-center">Evergreen Collective</h3>
+      <section class="small-12 large-offset-0 large-7 columns end">
         <article class="evergreen project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Evergreen Collective</h3>
+            <p class="project-p medium-offset-2 medium-8">
               This is a logo that I created in Adobe Photoshop that is influenced by minimalism, as I 
               was sketching in one of my notebooks and had thoughts of combining different elements 
               together to see what would come out of it. This is the result of what I created, it has elements 
               of simplicity and minimalism. Evergreen Collective is a fictitious name that I came up with due to 
               my love of nature especially the forest. 
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>Adobe Photoshop</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="images/evergreen_collective.jpg" target="_blank">Look</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="images/evergreen_collective.jpg" target="_blank">See Work</a>
-        </div>
       </section>
       <!-- .design-project-4 -->
     </div><!-- end .row -->
-    <div class="row expanded">
+    <div class="row">
       <!-- .design-project-5 -->
-      <section class="small-12 large-offset-1 large-5 columns">
-        <h3 class="project-header text-center">Lemon Twist</h3>
+      <section class="small-12 large-offset-0 large-7 columns">
         <article class="lemon_twist project-initial">
-          <div class="project-description large-4">
-            <p class="project-p">
+          <div class="project-description large-12">
+            <h3 class="project-header text-center">Lemon Twist</h3>
+            <p class="project-p medium-offset-2 medium-8">
               Made in photoshop, one day I was sketching somethings in my notebook and I combined an 
               L and a T together and it formed into something I liked. I came up with a name that had both
               the L and T together and Lemon Twist is what came to my mind. I then gathered inspiration after shopping 
               at the grocery store and picking up a lemon the background came to my mind, followed by fonts to use. I had 
               the idea of mixing the L and T as a handwritten font then the the rest as a sans serif font.
             </p>
-            <hr>
+            <hr class="medium-6">
             <h4 class="text-center">Made with:</h4>
             <ul class="text-center">
               <li>Adobe Photoshop</li>
             </ul>
+            <div class="btn-wrap text-center">
+              <button class="btn-minimize float-center">Minimize</button>
+              <a class="float-center" href="images/Lemon_Twist.jpg" target="_blank">Look</a>
+            </div>
+          </div>
+          <div class="clearfix">
+            <button class="btn-reveal float-right">View</button>
           </div>
         </article>
-        <button class="btn-reveal float-center">See Project</button>
-        <div class="btn-wrap text-center">
-          <button class="btn-minimize float-center">Minimize</button>
-          <a class="float-center" href="images/Lemon_Twist.jpg" target="_blank">See Work</a>
-        </div>
       </section>
       <!-- .design-project-5 -->
     </div><!-- end .row -->
@@ -193,17 +200,17 @@
     <section class="contact" id="contact">
       <div class="row">
       <form action="https://formspree.io/nicholasgreencreations@gmail.com" method="POST">
-        <div class="contact-header text-center">
-          <h2>Contact</h2>
-          <span class="subheader">Leave me a message and I will get in contact with you</span>
-        </div>
-        <div class="small-offset-1 small-10 large-offset-1 large-5 columns">
+          <div class="contact-header text-left small-12">
+            <h2>Contact</h2>
+            <span class="subheader">Leave me a message and I will get in contact with you</span>
+          </div>
+        <div class="small-12 large-6 columns">
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="email" placeholder="Email Address">
           <textarea placeholder="Comments" name="comments"></textarea>
           <button class="small-12 button" type="submit">Send Message</button>
         </div>
-        <article class="small-10 small-offset-1 large-offset-0 large-5 columns end">
+        <article class="small-12 large-6 columns end">
           <p>
             Thank you for visiting my website! if you would like to reach out to me, please fill out the form to 
             the left. Please include your name, email, and a little about your project needs. I will respond to 
@@ -224,15 +231,14 @@
     <!-- .main-footer -->
     <footer class="main-footer">
       <div class="top-bar">
-        <div class="top-bar-right">
-          <div class="menu-centered">
-            <ul class="menu horizontal">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#top">Top</a></li>
-              <li><a href="index.html#work">Work</a></li>
-              <li><a href="index.html#about">About</a></li>
-            </ul>
-          </div>
+        <div class="menu-centered">
+          <ul class="menu horizontal">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web-work.html">Web</a></li>
+            <li><a href="#top">Design</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
     </footer>
